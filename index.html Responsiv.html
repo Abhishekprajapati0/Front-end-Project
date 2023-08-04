@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wedsite</title>
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.main{
+	width: 100%;
+	height: 400px;
+	border: 2px black solid;
+	background: url("https://previews.123rf.com/images/phanuwatnandee/phanuwatnandee1512/phanuwatnandee151200144/48848428-close-up-white-coffee-cup-and-coffee-beans-on-wood-table-and-view-of-sunset-or-sunrise-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.main > h1{
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	color: blue;
+	text-align: center;
+	margin: 50px 50px;
+}
+.main > h2{
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	color: greenyellow;
+	text-align: center;
+}
+.logo h1
+{
+text-transform: uppercase;
+letter-spacing: 15px;
+padding: 10px;
+color: white;
+}
+nav{
+	display: flex;
+	background: radial-gradient(black,green,purple);
+	justify-content: space-between;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin: 10px 30px;
+	padding: 5px;
+}
+nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:white;
+}
+nav a:hover{
+	border: 2px white solid ;
+	background: radial-gradient(blue,green,yellow);
+	color: white;
+	border-radius: 5px;
+}
+#click:checked ~ ul{
+	left: 0%;
+}
+.menu-bar i{
+	font: 25px;
+	padding: 10px;
+	color: white;
+	display:none;
+}
+nav input {
+	display:none ;
+}
+.first{
+	width: 100%;
+	margin: auto;
+     height:auto;
+     gap: 10px;
+     background: url("https://i.pinimg.com/736x/b3/19/d8/b319d809655f965c91ea4f4cb4340091.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.itesm{
+	width: 30%;
+	height: 200px;
+	border: 2px white solid;
+}
+.itesm:hover{
+	transform: translateX(10px);
+}
+.itesm img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	border: 2px black solid;
+	margin: 0px 140px;
+}
+.itesm h2{
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+}
+.itesm > p{
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.itesm > a{
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 10px 140px;
+	text-decoration: none;
+}
+.itesm > a:hover{
+	border: 2px white solid;
+	background: blue;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+} 
+.middel{
+	width: 100%;
+	height: 400px;
+	border: 2px black solid;
+	background: url("https://i.pinimg.com/736x/b3/19/d8/b319d809655f965c91ea4f4cb4340091.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.paragraph{
+	width: 600px;
+	height: 390px;
+	border: 2px white solid;
+	float: left;
+	margin: 0px 20px;
+}
+.paragraph >h2{
+	color: white;
+	font: 25px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.paragraph > p{
+	text-align: justify;
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+}
+.collect{
+	width: 600px;
+	height: 390px;
+	border: 2px white solid;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.collect img{
+	width: 150px;
+	height: 150px;
+	border: 2px white  solid;
+}
+
+
+.last{
+	width: 100%;
+	height: 400px;
+	border: 2px solid darkred;
+	background: radial-gradient(blue,purple,yellow);
+	display: flex;
+	justify-content: space-around;
+}
+.last div{
+	width:300px ;
+	height: 390px;
+	border: 2px white solid;
+}
+.last div > h3{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.last div ul li {
+	padding: 10px;
+	margin: 10px 30px;
+	color: white;
+	list-style: none;
+	text-align: center;
+
+}
+.last div > p{
+	font-size: 16px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+
+}
+.last div > img{
+	width: 300px;
+	height: 390px;
+}
+
+
+
+@media (max-width:786px){
+	.main{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.main > h1{
+	height: auto;
+}
+.main > h2{
+	height: auto;
+}
+	nav ul{
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		background: radial-gradient(black,orange,purple);
+		width: 100%;
+		height: 300px;
+		justify-content: center;
+		align-items: center;
+		display: block;
+		text-align: center;
+	}
+	nav ul li{
+		margin: 10px 30px ;
+		padding: 15px;
+	}
+	nav a{
+		color: white;
+	}
+	#click:checked ~ ul{
+		left: 0%;
+	}
+	.menu-bar i{
+		display: block;
+
+	}
+	nav input{
+		display: none;
+	}
+	.logo{
+		margin: auto;
+	}
+	.first{
+		width: 100%;
+		height: auto;
+		gap: 10px;
+		padding: 10px;
+	}
+	.itesm{
+		width: 450px;
+		padding: 10px;
+		margin: auto;
+		height: 300px;
+	}
+	.itesm img{
+		margin: 0px 170px;
+	}
+	.itesm h2{
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+.itesm > p{
+	width: 100%;
+	height: auto;
+	margin: 15px 20px;
+	padding: 15px;
+	font-size: 23px;
+	
+}
+.itesm > a{
+	color: white;
+	font-size: 19px;
+	text-transform: uppercase;
+	margin: 10px 150px;
+	text-decoration: none;
+}
+.itesm > a:hover{
+	border: 2px white solid;
+	background: blue;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+} 
+
+	.middel{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+	
+}
+  .paragraph{
+  	width: 100%;
+  	height: auto;
+  }	
+
+.paragraph >h2{
+	color: white;
+	font: 25px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.paragraph p{
+	width: 100%;
+	height: auto;
+}
+  .collect{
+  	width: 100%;
+  	height: auto;
+  	display: flex;
+  	flex-wrap: wrap;
+  	gap: 10px;
+  	justify-content: center;
+
+  }
+  .collect img{
+  	width:200px;
+  	height: 150px;
+  }
+  .last{
+  	width: 100%;
+  	height: auto;
+  	display: flex;
+  	flex-wrap: wrap;
+
+  }
+  .last div {
+  	width: 100%;
+  	height: auto;
+  }
+  .last div > p{
+  	width: 100%;
+  	height: auto;
+  }
+  .last div > img {
+  	width: 100%;
+  	height: auto;
+  }
+
+	
+
+
+	
+
+		
+	</style>
+</head>
+<body>
+<div class="main">
+	<nav>
+		<div class="logo">
+			<h1>smille</h1>
+
+		</div>
+		<input type="checkbox" name="text" id="click">
+		<label for="click" class="menu-bar"> 
+			<i class="fas fa-bars"></i>
+		</label>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Booking</a></li>
+			<li><a href="#">Service</a></li>
+		</ul>
+	</nav>
+	<h1>Good morning everyone welcome to my site</h1>
+	<h2>MY name is abhishek prajapati</h2>
+</div>
+<div class="first">
+	<div class="itesm">
+		<img src="https://assets.entrepreneur.com/content/3x2/2000/20180511063849-flipkart-logo-detail-icon.jpeg">
+		<h2>Flipkart</h2>
+		<hr>
+		<p>you want know the more information please press the link button</p>
+		<a href="https://www.flipkart.com/">Read more</a>
+	</div>
+	<div class="itesm">
+		<img src="https://images.livemint.com/img/2023/02/25/1600x900/Meesho_1648023411457_1677320823126_1677320823126.jpg">
+		<h2>MEESHO</h2>
+		<hr>
+		<p> you want know the more information please press the link button</p>
+		<a href="https://www.meesho.com/">Read more</a>
+	</div>
+	<div class="itesm">
+		<img src="https://play-lh.googleusercontent.com/AJCitwuXIAqauTL7ccZ-FlnO1_18DbYiYo9lk25TNOdlV7_hLz-ogqUMnOPDYyAeX-0">
+		<h2>zomato</h2>
+		<hr>
+		<p>you want know the more information please press the link button</p>
+		<a href="https://www.zomato.com/india">Read more</a>
+	</div>
+	<div class="itesm">
+		<img src="https://images.pexels.com/photos/9266562/pexels-photo-9266562.jpeg?cs=srgb&dl=pexels-rahul-soni-9266562.jpg&fm=jpg">
+		<h2>BIKE</h2>
+		<hr>
+		<p>you want know the more information please press the link button</p>
+		<a href="https://www.bikedekho.com/">Read more</a>
+	</div>
+	<div class="itesm">
+		<img src="https://play-lh.googleusercontent.com/17eSEYKyrGB5lMOK3b4zdZuc1wMJVFuoWa1ZDIjV7O0wq5YMkoDPx_qESf6kCZWYGVk8">
+		<h2>shopshy</h2>
+		<hr>
+		<p>you want know the more information please press the link button</p>
+		<a href="https://apps.shopify.com/shopshipshake">Read more</a>
+		</div>
+	<div class="itesm">
+		<img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960">
+		<h2>CAR</h2>
+		<hr>
+		<p>you want know the more information please press the link button</p>
+		<a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwidkbmJtsKAAxVsmGYCHZE0D1oYABAAGgJzbQ&ohost=www.google.com&cid=CAASJeRoB1FESL4AL3Cx5Cggyk1clOJLgKIZ8FTf-mw3l3qjKVX3v6Q&sig=AOD64_3Hfq43KcYn44EhLpnEjTmW_t-5ow&q&adurl&ved=2ahUKEwijq7SJtsKAAxUQe2wGHZ7sBj8Q0Qx6BAgOEAM">Read more</a>
+	</div>
+</div>
+<div class="middel">
+	<div class="paragraph">
+		<h2>
+			Hello every one i am your friend 
+			please you con essaly use my website
+			<h2 style="color: yellow; margin: 20px 0px;">about us</h2>
+		</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet.</p>
+		
+	</div>
+
+	<div class="collect">
+		<a href="https://www.netflix.com/">
+			<img src="https://m.economictimes.com/thumb/msid-94945321,width-700,height-400,resizemode-4,imgsize-17376/netflix-launches-new-profile-transfer-feature-details-here.jpg">
+		</a>
+		<a href="https://www.similarweb.com/top-websites/science-and-education/education/">
+			<img src="https://s3.ap-south-1.amazonaws.com/blogassets.leverageedu.com/media/uploads/2022/11/17105928/importance-of-education.jpg">
+		</a>
+		<a href="https://www.justwatch.com/in/movies">
+			<img src="https://hips.hearstapps.com/hmg-prod/images/lead-image-book-template-01-1-1671039379.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*">
+		</a>
+		<a href="https://www.jiosaavn.com/">
+			<img src="https://i.ytimg.com/vi/thAHQS5O6QU/maxresdefault.jpg">
+		</a>
+		<a href="https://movieetalks.com/top-23-best-south-movies-download-sites-that-you-can-watch/">
+			<img src="https://www.inventiva.co.in/wp-content/uploads/2023/07/Best-South-Indian-movies.jpg">
+		</a>
+		<a href="https://wynk.in/music">
+			<img src="https://img.freepik.com/premium-photo/music-mind-music-abstract-art-created-with-generative-ai-technology_545448-15311.jpg">
+		</a>
+		
+	</div>
+</div>
+
+
+<div class="last">
+<div>
+	<h3>Details</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p>
+
+</div>
+
+<div>
+<img src="https://images.samsung.com/is/image/samsung/assets/in/galaxy-watch5-pro/feature/galaxy-watch5-pro-sustain-kv-mo.jpg">
+</div>
+
+<div>
+	<h3>about us</h3>
+	<ul>
+	<li>Contact</li>
+	<li>Email</li>
+	<li>Information</li>
+	<li>Service</li>
+	<li>Location</li>
+	<li>bookins</li>
+</ul>
+	<p><span style="padding: 10px;"><a href=""><i class="fa-brands fa-google"></i></a></span><span style="padding: 10px;"><a href=""><i class="fa-brands fa-github"></i></a></span><span style="padding: 10px;"><a href=""><i class="fa-brands fa-linkedin"></i></a></span></p>
+
+</div>
+</div>
+<hr>
+<p>ksknlkln</p>
+<hr>
+</body>
+</html> 
