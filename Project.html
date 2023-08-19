@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Educational site</title>
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background: url("file:///C:/Users/ABHISHEK%20PRAJAPATI/Videos/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.main{
+			widows: 100%;
+			height: 500px;
+			
+			background: url("https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		nav{
+			display: flex;
+			justify-content: space-between;
+		}
+		nav ul{
+			display: flex;
+			list-style: none;
+		}
+		nav ul li{
+			margin: 10px 20px;
+			padding: 10px;
+
+
+		}
+		nav a{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: fantasy;
+			text-shadow: 5px 5px 10px yellow;
+			color: white;
+		}
+		nav a:hover{
+			border-bottom: 3px white solid;
+			transform: translateX(200px);
+			
+		}
+		.menu-bar i {
+			color: white;
+			margin: 10px 20px;
+			display:none ;
+		}
+		#click:checked ~ ul{
+			left: 0%;
+		}
+		nav input{
+			display: none;
+		}
+		.heading{
+			widows: 500px;
+			height: 300px;
+			
+			margin: 10% 0px;
+
+		}
+		.heading > h1{
+			text-align: center;
+			letter-spacing: 10px;
+			text-shadow: 5px 5px 10px grey;
+			font-family: fantasy;
+			color: white;
+		}
+		.heading > p{
+			text-align: center;
+			font-family: sans-serif;
+			margin: 20px 0px;
+			color: white;
+		}
+		.heading > button{
+			margin: 20px 45%;
+			padding: 10px;
+			box-shadow: 5px 5px 10px white;
+			border-radius: 10px;
+			font-size: 18px;
+			white-space: nowrap;
+
+		}
+		.heading > button:hover{
+			background:radial-gradient(red,blue,black);
+			color: white;
+		}
+
+		.two-section{
+			width: 100%;
+			height: 300px;
+		
+			display: flex;
+			justify-content: space-around;
+			gap: 10px;
+			flex-direction: row;
+		}
+		.one-section{
+			width: 300px;
+			height: 250px;
+			box-shadow: 5px 5px 10px grey;
+			margin: 20px 0px;
+			border-radius: 10px;
+			
+		}
+		.one-section:hover{
+			box-shadow: 2px 2px 10px grey;
+		}
+		.one-section  h2{
+			text-align: center;
+			text-shadow:5px 5px 10px grey;
+			background: blue;
+			text-decoration: none;
+
+		}
+		.one-section a{
+			text-decoration: none;
+			text-align: center;
+			margin: 20px 0px;
+			color: white;
+		}
+		.one-section > p{
+			text-align: center;
+			font-family: monospace;
+			background: gold;
+			margin: 40px 0px;
+			border-radius: 10px;
+
+		}
+
+		h1 {
+			text-align: center;
+			font-family: fantasy;
+			text-shadow: 5px 5px 10px grey;
+			letter-spacing: 10px;
+			color: blue;
+
+		}
+		.logo > h1{
+			color: white;
+			padding: 10px ;
+			font-size: 30px;
+		}
+		
+		.third-section{
+			width: 100%;
+			height: 400px;
+			margin: 10px 0px;
+			display: flex;
+			
+
+			justify-content:space-around;
+
+		}
+		.three-section{
+			width: 250px;
+			height: 380px;
+			box-shadow: 5px 5px 10px grey;
+			border-radius: 10px;
+		
+		}
+		.three-section > img{
+			width:250px;
+			height:380px;
+			border-radius:8px;
+		}
+		.three-section:hover{
+			box-shadow: 2px 2px 10px grey;
+
+		}
+		.fourth-section{
+			width: 100%;
+			height: 300px;
+			
+
+			display: flex;
+			gap: 10px;
+			justify-content: space-around;
+	
+		}
+		.four-section{
+			width: 250px;
+			height: 250px;
+			box-shadow: 5px 5px 10px grey;
+			border-radius: 10px;
+			
+			margin: 20px 0px;
+			
+		}
+		.four-section:hover{
+			box-shadow: 2px 2px 10px grey;
+		}
+		
+
+		
+		.four-section > div {
+			margin: 3% 3%;
+			
+		}
+		.four-section p ,h3{
+			text-align: center;
+
+		} 
+		.four-section div > h3{
+			text-shadow:5px 5px 10px grey;
+			background: gold;
+			border-radius: 10px;
+
+
+		}
+		.four-section > img{
+			width: 250px;
+			height: 250px;
+			border-radius: 8px;
+		}
+		
+		.Enrol{
+			width: 100%;
+			height: 300px;
+			display: flex;
+			
+			margin: 10px 0px;
+			justify-content: space-around;
+
+		}
+		.first img{
+			width: 80px;
+			height: 80px;
+			border-radius: 40px;
+			
+			margin:  0px 40% ;
+			padding: 10px 5px;
+
+		}
+
+		.first > p{
+			text-align: center;
+			background:gold;
+		}
+		
+		
+		.first{
+			width: 45%;
+			height: 250px;
+			background-color: white;
+			margin: 20px 0px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px cyan;
+			
+		}
+		.first > h4 {
+			text-align: center;
+			margin: 0px 0px;
+		}
+		.apply{
+			width: 50%;
+			height: 300px;
+			border-radius: 5px;
+			background-color: white;
+			background: url("https://kairoseducatespune.files.wordpress.com/2013/05/group.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			
+			box-shadow: 5px 5px 10px grey;
+			margin: auto;
+			
+		}
+		.apply > h1{
+			text-align: center;
+			font-family: fantasy;
+			color: white;
+			letter-spacing: 10px;
+			
+		}
+		span h1{
+			margin: 5% 0px;
+
+		}
+		.apply > button{
+			padding: 10px;
+			margin: 20px 44%;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px grey;
+			font-size: 18px;
+		}
+		.apply > button:hover{
+			background: radial-gradient(red,black,blue);
+			color: white;
+		}
+		.Details{
+			width: 100%;
+			height: 300px;
+			background-color: white;
+			border-radius:5px ;
+			box-shadow: 5px 5px 10px grey;
+			
+			margin: 20px 0px;
+		}
+		.Details p{
+			text-align: center;
+			font-family: cursive;
+		}
+		.Details > h2{
+			text-align: center;
+			text-shadow: 5px 5px 10px grey;
+			font-family: fantasy;
+		}
+		.outher{
+			width: 100%;
+			height: 20px;
+			margin:5% 0px;
+			box-shadow:5px 5px 10px grey; ;
+		}
+
+
+
+
+		@media (max-width:786px){
+
+			.main {
+				height: auto;
+				width: 100%;
+			}
+			.heading{
+				width: 100%;
+				height: auto;
+			}
+			.heading p h1{
+				width: 100%;
+				height: auto;
+			}
+			nav ul{
+				position: fixed;
+				top: 10px;
+				left: -100%;
+				display: block;
+				background: radial-gradient(red,yellow,green);
+				align-items: center;
+				text-align: center;
+				justify-content: center;
+				width: 300px;
+				height: auto;
+			}
+			nav ul li{
+				margin: 10px 20px;
+				text-align: center;
+
+			}
+			nav a{
+				color: white;
+				text-align: center;
+
+			}
+			#click:checked ~ ul{
+				left: 0%;
+			}
+			.logo{
+				margin: auto;
+			}
+			.logo h1{
+				text-align: center;
+				width: 100%;
+				font-family: fantasy;
+				height: auto;
+				margin: 0px 0px;
+				padding: 10px;
+			}
+			nav input{
+				display: none;
+			}
+			.menu-bar i{
+				display: block;
+				color:white;
+				font-size: 20px;
+				margin: 20px 30px;
+			}
+			.heading  button{
+				width: 100%;
+				height: auto;
+				margin: auto;
+			}
+			.heading > h1{
+				font-family: fantasy;
+			}
+			.two-section{
+			width: 100%;
+			height: auto;
+			display: block;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.one-section{
+			width: 300px;
+			height: 250px;
+			box-shadow: 5px 5px 10px grey;
+			margin: 20px 0px;
+			border-radius: 10px;
+			
+		}
+		.third-section{
+			width: 100%;
+			height: auto;
+			display: block;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap:10px;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.three-section{
+			width: 250px;
+			height: 380px;
+			box-shadow: 5px 5px 10px grey;
+			border-radius: 10px;
+		
+		}
+		.fourth-section{
+			width: 100%;
+			height: auto;
+			display: block;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap:10px;
+			justify-content: center;
+			align-items: center;
+	
+		}
+		.four-section{
+			width: 250px;
+			height: 250px;
+			box-shadow: 5px 5px 10px grey;
+			border-radius: 10px;
+			
+			margin: 20px 0px;
+			
+		}
+		.four-section >div{
+			width: 100%;
+			height: auto;
+			margin: auto;
+		}
+		 .Enrol {
+		 	width: 100%;
+			height: auto;
+			display: block;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap:10px;
+			justify-content: center;
+			align-items: center;
+		}
+		.first{
+			width: 100%;
+			height: auto;
+		}
+		.apply{
+			width: 100%;
+			height: auto;
+			display: block;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap:10px;
+			justify-content: center;
+			align-items: center;
+			}
+			.apply h1{
+				overflow: hidden;
+			}
+			.apply > button{
+				height: auto;
+			}
+	.Details{
+			width: 100%;
+			height: auto;
+			
+		}
+		.Details p{
+			width: 100%;
+			height: auto;
+		}
+		.outher{
+			width: 100%;
+			height: auto;
+		}
+		.outher p{
+			width: 100%;
+			height: auto;
+		}
+		h1{
+			color: blue;
+			height: auto;
+			font-family: fantasy;
+			width: 100%;
+		}
+}
+
+
+
+	</style>
+</head>
+<body>
+<div class="main">
+	<nav>
+		<div class="logo">
+			<h1>Education</h1>
+		</div>
+		<input type="checkbox" id="click">
+		<label for="click" class="menu-bar">
+			<i class="fas fa-bars"></i>
+		</label>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Courses</a></li>
+			<li><a href="#">Contact'Us</a></li>
+			<li><a href="#">Servic</a></li>
+		</ul>
+	</nav>
+	<div class="heading">
+		<h1>World' Biggest Univercity</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<button type="button">View more Info</button>
+	</div>
+</div>
+
+
+<!------main section--->
+<h1>Courses We Offer</h1>
+<!-------h1----->
+<div class="two-section">
+
+	<div class="one-section">
+		<a href=""><h2>Intermidiat</h2></a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="one-section">
+		<a href=""><h2>Degree</h2></a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="one-section">
+		<a href=""><h2>Post Graduation</h2></a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+
+
+<!------second----->
+<h1>Our Globle Compus</h1>
+<!--------section------->
+<div class="third-section">
+	<div class="three-section">
+		
+		<img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2020/08/A1607-10-things-to-remember-while-designing-a-university-campus-Image-3.jpg">
+	</div>
+	<div class="three-section">
+		<img src="https://media.gettyimages.com/id/564108013/photo/william-j-samford-hall-is-a-structure-on-the-campus-of-auburn-university-in-auburn-alabama.jpg?s=612x612&w=gi&k=20&c=vHyx5Jy2hpC9OAKo9chr_wguH4HPNEY5eqOUSm0uxS0=">
+	</div>
+	<div class="three-section">
+		<img src="https://c8.alamy.com/comp/2DYH71X/auburn-university-alabamacampus-william-j-samford-hall-clock-towerpark-administration-building-2DYH71X.jpg">
+	</div>
+</div>
+
+
+<!-----thied section------>
+<h1>Our Faclities</h1>
+<div class="fourth-section">
+	<div class="four-section">
+		<img src="https://bldcollege.ac.in/wp-content/uploads/2019/05/library.jpg">
+		<div>
+		<h3>World Class Library</h3>
+		
+	</div>
+	</div>
+	
+	<div class="four-section">
+		<img src="https://www.shutterstock.com/shutterstock/photos/549133762/display_1500/stock-photo-multi-sports-proud-players-collage-on-grand-arena-549133762.jpg">
+		<div>
+		<h3>Largest Play Ground</h3>
+		
+	</div>
+	</div>
+	
+	<div class="four-section">
+		<img src="https://m.media-amazon.com/images/I/61hjhIIFTSL._AC_UF1000,1000_QL80_.jpg">
+		<div>
+		<h3>Teasty And Health Food</h3>
+		
+	</div>
+	</div>
+	
+</div>
+
+<!------fourth section------>
+<span><h1>What Our Student Says</h1></span>
+<div class="Enrol">
+	<div class="first">
+		<a href=""><img src="https://img.freepik.com/free-photo/business-young-professional-businessman-glasses-smiling-camera-cross-arm-chest-with_1258-26377.jpg?w=2000"></a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+		<h4>Stifine Malic</h4>
+		
+		</div>
+	<div class="first">
+		<a href=""><img src="https://simg.nicepng.com/png/small/7-78595_asian-businessman-png-professional-man-images-png.png"></a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. </p>
+		<h4>Deniam shahusail</h4>
+		
+	</div>
+</div>
+
+<!------Enrol--------->
+<div class="apply">
+	<h1>Enroll For Our Various Online Course Anywhere From The World</h1> 
+	<button type="button">ContactUs</button>
+</div>
+<!-------Apply----->
+
+<div class="Details">
+	<h2>About us</h2>
+	<h2>This web site is Educatinol </h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<!-----dETAILS------>
+
+
+<div class="outher">
+	<p style="text-align: center; margin: 20px 0px; background: blue; font-family: fantasy; font-size: 20px;"><b>Created By </b> <span>Abhishek Prajapati</span><b> Gmail  </b>  ap3182622@gmail.com</p></div> 
+</div>
+</body>
+</html>
