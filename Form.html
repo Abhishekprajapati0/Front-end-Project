@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>forms</title>
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			background:url("https://thumbs.dreamstime.com/b/young-businessman-giving-some-new-ideas-project-to-his-partners-conference-room-business-people-discussing-126362532.jpg");
+			background-size: cover;
+			
+
+			background-position: center;
+			font-family: sans-serif;
+			background-repeat: no-repeat;
+		}
+		
+		
+		
+		.main{
+			width: 100%;
+			height:auto;
+			
+
+		}
+		
+
+		
+		
+		.form{
+			width: 500px;
+			height: auto;
+			background:radial-gradient(black,skyblue,black);
+			padding: 20px;
+
+			padding: 5px;
+			margin: auto;
+		}
+		.form #first{
+			width: 90%;
+			height: auto;
+			padding: 10px;
+			
+			border-radius: 5px;
+		}
+		.form #first b{
+			padding: 10px;
+
+
+		}
+		b{
+			color: white;
+		}
+	
+		.form #select{
+			width: 90%;
+			height: auto;
+			padding: 10px;
+			border-radius: 5px
+
+		}
+		.logo{
+			
+
+		}
+		.form #submit{
+			width: 90%;
+			height: 35px;
+			cursor: pointer;
+			font-size: 20px;
+			margin: 5% ;
+			text-transform: uppercase;
+			background-color: orange;
+		}
+		.form textarea{
+			width: 93%;
+			height: 100px;
+		}
+		 .main > nav{
+			display: flex;
+			background: black;
+			width: 100%;
+			height:60px;
+		
+			justify-content: space-between;
+		}
+		nav ul{
+			display: flex;
+			list-style: none;
+			
+		}
+		nav ul li{
+			margin: 10px 10px;
+
+
+		}
+		nav button {
+			padding: 6px;
+			border-radius: 5px;
+			color: white;
+			padding: 10px;
+			cursor: pointer;
+			background: linear-gradient(black,skyblue,black);
+		}
+		.head{
+			width: 100%;
+			height: 100px;
+			margin:  0px;
+			
+		}
+		.head >p{
+			text-align: center;
+			font-family: sans-serif;
+			color: white
+		}
+		.head h3{
+			text-align: center;
+			font-family: sans-serif;
+			color: white;
+
+		
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="main">
+	<nav>
+	<div class="logo">
+		
+		<span style="color:grey;">A Pen by FreeCodeCompos.org</span>
+		<br>
+		<span style="color:white;"><b>FCC: Survay From</b></span>
+
+
+
+	</div>
+	<ul>
+		<li><button type="button"><i class="fa-solid fa-heart"></i></button></li>
+		<li><button type="button">View Source Code</button></li>
+		<li><button type="button" style="background: green;" >Sing Up</button></li>
+		<li><button type="button">Log In</button></li>
+	</ul>
+</nav>
+<div class="sec-nav">
+	<nav>
+		
+	</nav>
+</div>
+<div class="head">
+	<h3 >FreeCodeCamp Survey Form</h3>
+<p >Thank you for talking  the time to help us improvie the 
+platform </p>
+
+</div>
+
+</div>
+
+
+
+<div class="form">
+	<from>
+		<label><b>Name</b></label>
+		<br>
+		<input type="text" name="text" id="first" placeholder="Enter your name" required >
+		<br>
+		<label><b>Email</b></label>
+		<br>
+		<input type="Gmail" name="text"  id="first" placeholder="Enter your email" required >
+		<br>
+		<label><b>Age</b></label>
+		<br>
+		<input type="age" name="text"id="first" placeholder="Enter your age" required >
+		<br>
+
+		<p><b>Which option best discribes your current role?</b></p>
+		<select id="select">
+			
+			<option>Select carrect role</option>
+			<option>Student</option>
+			<option>Full time job</option>
+			<option>Full time Learner</option>
+			<option>Prefer not to say</option>
+			<option>Other</option>
+		
+		</select>
+		<br>
+		<p><b>Would you reccomend freeCode to a friend?</b></p>
+		<label>
+			<span style="color: white;"><input type="radio" name="text">Definitily</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="radio" name="text">Maybe</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="radio" name="text">Not sure</span>
+
+		</label>
+		<br>
+		<p><b>What is you favorite feature of freeCodeComp?</b></p>
+		<select id="select">
+			<option>Select carrect role</option>
+			<option>Challenge</option>
+			<option>Project</option>
+			<option>Community</option>
+			<option>Open Soucer</option>
+		</select>
+		<br>
+
+		<p style="color: white;"><b>What would you like to see improves ?</b>
+		(check all that apply)</p>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Front-end Project</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Back-end Project</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Data Visualizationan</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Challenges</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Open Source Community</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Gitter help room</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Video</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">City Meetups</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Wikia</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Forum</span>
+
+		</label>
+		<br>
+		<label>
+			<span style="color: white;"><input type="checkbox" name="text">Additionl Courses</span>
+
+		</label>
+		<br>
+		<p><b>Any comments or suggestion</b></p>
+		<textarea placeholder="Enter your comments here"></textarea>
+		<br>
+		<input type="Submit" name="Submit" value="submit" id="submit">
+	</from>
+		
+
+		
+
+		
+	
+
+
+
+
+		
+
+	</from>
+</div>
+</body>
+</html>

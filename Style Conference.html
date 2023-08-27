@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Style Conference</title>
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style>
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background: radial-gradient(black,grey,black);
+}
+
+.main{
+	width:100%;
+	height: 500px;
+	
+
+	
+
+
+}
+.main >p{
+	text-align: center;
+	color: pink;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+nav {
+
+
+}
+
+.logo{
+	margin: 30px 80px;
+
+
+}
+.logo a {
+	padding:  10%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	letter-spacing: 10px;
+	font-size: 40px;
+
+	text-transform: uppercase;
+}
+ .logo  a:hover{
+ 	color: orange;
+ 	letter-spacing: 20px;
+ 	font-family: fantasy;
+
+ }
+ .logo >p{
+ 	margin: 20px 0px;
+ 	text-align: center;
+
+ }
+
+
+
+.heding{
+	width: 100%;
+	height: auto;
+
+}
+.heding >p{
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+.heding > button{
+	margin: 20px 43%;
+	padding: 20px;
+	background: grey;
+	border: 1px white solid;
+
+	text-transform: uppercase;
+	font-family: sans-serif;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+.heding >button:hover{
+	background: radial-gradient(blue,purple,green);
+	color: white;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin: 80px 30px;
+}
+nav a{
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+}
+nav a:hover{
+	color: orange;
+
+}
+.menu-bar i{
+	display: none;
+	color: white;
+}
+#click:checked ~ ul{
+	left: 0%;
+}
+nav input{
+	display:none;
+}
+.first{
+	width:100%;
+	margin: auto;
+	display: flex;
+	gap: 20px;
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEqwhsFRZ40R4L_U1Ks9oNDw8e-FZJwd92Hw&usqp=CAU");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	height:auto;
+}
+
+
+.one{
+	width: 300px;
+	height: auto;
+
+}
+.one a  img{
+	width: 250px;
+	height: 250px;
+	border-radius: 5px;
+
+
+
+
+}
+.one a,img:hover{
+	color: grey;
+}
+.one p{
+	font-family:cursive;
+	color: white;
+	text-align: justify;
+
+}
+.lst{
+	width: 100%;
+	height: 200px;
+	
+	
+}
+
+
+
+}
+
+
+
+	</style>
+</head>
+<body>
+<div class="main">
+	<nav>
+	<div class="logo">
+		<h1><a href="#">Styles <br> Conference</a></h1>
+</div>
+<input type="checkbox" id="click">
+		<label for="click" class="menu-bar">
+			<i class="fas fa-bars"></i>
+		</label>
+
+	
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#"> speakers</a></li>
+		<li><a href="#">schedule</a></li>
+		<li><a href="#">venus</a></li>
+		<li><a href="#">register</a></li>
+		
+	</ul>
+</nav>
+<p>Dedicated to the Creaf of Building Website</p>
+
+<div class="heding">
+	
+	<p>Every year the brightest web desingners and front-end devloper descend on<br>
+	Chicago to discus the letest tech logies.Join us this August</p><br>
+	<button type="button">Regester Now</button>
+</div>
+</div>
+
+<!------main---->
+
+<div class="first">
+	
+	<div class="one">
+		<p>SPEKEARS</p>
+		<br>
+		<a href="#"><img src="https://www.careeraddict.com/uploads/article/54325/man-public-speaking.jpg"></a>
+		<p><a href="" style="text-decoration: none; color:yellow;">World Class Spekears</a></p>
+		<br>
+		<p>Joining us form all around the world are 
+		over tewenty fantastic speakers here to.share their stories.</p>
+		
+	</div>
+	<div class="one">
+		<p>SCHEDUL</p>
+		<br>
+		<a href="#"><img src="https://th.bing.com/th/id/OIP.dz5iH6Sr13MbgLUqbbSHNwHaE7?pid=ImgDet&rs=1"></a>
+		<p id="link"><a href="" style="text-decoration: none; color:yellow;">There Inspiring Day</a></p>
+		<br>
+		<p>Enjoy three inspiring and action-packed
+		days of tals,gathering,and all around
+	good time.</p>
+		
+
+		
+	</div>
+	<div class="one">
+		<p>VENUS</p>
+		<br>
+		<a href="#"><img src="https://www.wondermondo.com/wp-content/uploads/2020/02/ChicagoTheatre.jpg"></a>
+		<p id="link"><a href="" style="text-decoration: none; color: yellow;">The Chicoga Theatre</a></p>
+		<br>
+		<p>Within the heart of downtown Chiocago
+		The Chicago Theatre will provide a beautiful conference venue</p>
+		
+	</div>
+	
+
+</div>
+<div class="lst">
+	<nav>
+	<div class="logo">
+		<P><a href="#">Styles<BR> Conference</a></P>
+</div>
+	
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#"> speakers</a></li>
+		<li><a href="#">schedule</a></li>
+		<li><a href="#">venus</a></li>
+		<li><a href="#">register</a></li>
+		
+	</ul>
+</nav>
+</div>
+	
+
+
+</body>
+</html>
