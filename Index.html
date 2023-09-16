@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style>
+		*{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background:rgb(20,40,60);
+}
+body > h3{
+	text-align: center;
+	color: black;
+	background-color: white;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+}
+.logo img{
+	width: 100px;
+	background: radial-gradient(blue,purple,yellow,green);
+	height: 100px;
+	padding: 5px;
+	border-radius: 100px;
+
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav ul li{
+	margin: 10px 50px;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+nav a:hover{
+	background-color: orange;
+	border: 2px white solid;
+	color: white;
+	transition: 1s all;
+	padding: 5px;
+	border-radius: 5px;
+}
+.menu-bar i{
+	display:none ;
+	margin: 10px 20px;
+	color: white;
+}
+#click:checked ~ ul{
+	left: 0%;
+
+}
+
+nav input{
+	display:none ;
+}
+
+
+
+.moving{
+	width: 100px;
+	border-top: 10px white solid;
+	border-bottom: 10px yellowgreen solid;
+	border-left: 10px blue solid;
+	border-right: 10px green solid;
+	height: 100px;
+	background: radial-gradient(blue,purple,yellow,red);
+	padding: 10px;
+	border-radius: 100px;
+	animation: move 1s infinite;
+}
+@keyframes move{
+	100%{
+		transform: rotate(1000deg);
+	}
+}
+
+.two{
+	width: 100%;
+	height: 400px;
+	margin-top: 15px 0px;
+	display: flex;
+	justify-content: space-around;
+}
+.two-image{
+	width: 300px;
+	height: 300px;
+	box-shadow: 2px 2px 40px yellow;
+	margin-top: 20px;
+	border-radius:300px ;
+
+}
+.two-image:hover{
+	transform:scale3d(1.2, 1.3, 1.1);
+}
+.two-image img{
+	width: 300px;
+	background: radial-gradient(blue,pink,brown);
+	padding: 10px;
+	height: 300px;
+	border-radius: 300px;
+	object-fit-: cover;
+}
+.descrip{
+	width: 70%;
+	height: 400px;
+	text-align: center;
+}
+.descrip > p{
+	word-spacing: 10px; 
+	line-height: 22px; 
+	color: pink;
+}
+
+.About{
+	width: 100%;
+	height: 400px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.about-img{
+	width: 300px;
+	height: 300px;
+	margin: 30px 10px;
+	box-shadow: 2px 2px 40px blue;
+	border-radius: 300px;
+}
+.about-img:hover{
+	transform:scale3d(1.3, 1.2, 1.1);
+}
+.about-img img{
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	padding: 10px;
+	background: radial-gradient(blue,green,purple,yellow);
+}
+.Intro > p{
+	word-spacing: 10px;
+	 line-height: 22px; 
+	 color: pink; 
+	 text-align: center;
+}
+.Intro{
+	width: 70%;
+	height: 380px;
+	
+}
+
+.project{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.works:hover{
+	transform:scale3d(1.1, 1.1, 1.1);
+}
+
+.works{
+	width: 20%;
+	height: 200px;
+	background-color: whitesmoke;
+	box-shadow: 2px 2px 10px yellow;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+.works button{
+	margin: 10px 35%;
+	 padding: 5px;
+	  border-radius: 5px; 
+	  background-color:green;
+	  color:white;
+	
+}
+.works img{
+	width: 240px;
+	height: 130px;
+	padding: 5px;
+	margin: 0px 5px;
+}
+.works #button:hover{
+	background-color: orange;
+	color: white;
+	transition: 1s all;
+}
+
+.servic{
+	width: 70%;
+	height: auto;
+	margin:20px 13%;
+	border-radius: 10px;
+	display: flex;
+	gap: 10px;
+	background-color: pink;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.provide{
+	width: 30%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 220px;
+	box-shadow: 2px 2px 10px green;
+	border-radius: 5px;
+	border: 2px blue solid;
+}
+.provide:hover{
+	transform:scale3d(1.1, 1.1, 1.1);
+}
+.provide  button{
+	margin: 10px 35%;
+	 padding: 5px;  
+	 border-radius: 5px;
+	  background-color:green;
+	  color:white;
+}
+.provide  #button:hover{
+	background-color: orange;
+	color: white;
+	transition: 1s all;
+}
+.provide img{
+	width: 240px;
+	height: 130px;
+	padding: 5px;
+	margin: 0px 5px;
+}
+.contact{
+	width: 50%;
+	height: auto;
+	box-shadow: 2px 2px 20px yellow;
+	border-radius: 10px;
+	border: 2px white solid;
+	display: flex;
+	background-color: blue;
+	margin: auto;
+
+}
+.contact form{
+	width: 100%;
+	display: flex;
+	padding: 10px;
+	font-weight: bold;
+	white-space: nowrap;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.contact > form input{
+	width:100%;
+	padding:2px;
+	color: black;
+	font-weight: bold;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+.contact form  button{
+	width: 200px;
+	padding: 10px;
+	background: white;
+	color: black;
+	font-weight: bold;
+	border-radius: 10px;
+	margin: 10px 36%;
+}
+.contact form button:hover{
+	background-color: green;
+	color: white;
+	transition: 1s all;
+}
+.last{
+	width: 100%;
+	margin-top: 10px;
+	height: 150px;
+	border: 2px red solid;
+	background-color: pink;
+}
+.last > div  h5{
+	text-align:center; 
+	font-family: monospace; 
+	font-smooth: initial;
+	 font-weight: bold; 
+	 letter-spacing: 10px; 
+	 color: blue; 
+	font-size: 30px;
+}
+
+@media (max-width:500px){
+	body{
+		display: block;
+		width: 100%;
+		height: auto;
+		overflow-x: hidden;
+	}
+	nav ul{
+		position: fixed;
+		top: 10px;
+		left: -100%;
+		height: 300px;
+		width: 230px;
+		display: block;
+		text-align: center;
+		align-items: center;
+		background-color: black;
+	}
+	
+	nav ul li{
+		margin: 10px 50px;
+	}
+	nav ul li a{
+		color: white;
+	}
+	.menu-bar i{
+	display: block;
+	color: white;
+	margin: 10px 40px;
+  }
+  #click:checked ~ ul{
+	left: 0%;
+   }
+    nav input{
+	display:none;
+
+   }
+   .two{
+   	width: 100%;
+   	height: auto;
+   	display: flex;
+   	justify-content: center;
+   	align-items: center;
+   	flex-wrap:wrap;
+   	flex-direction: column;
+   	align-content: center;
+   }
+   .descrip{
+   	width: 100%;
+   	height: auto;
+   }
+   .descrip > p{
+   	width: 100%;
+   	height: auto;
+   }
+   .About{
+   	width: 100%;
+   	height: auto;
+   	display: flex;
+   	justify-content: center;
+   	align-items: center;
+   	flex-direction: column;
+   	flex-wrap:wrap ;
+   }
+   .Intro{
+   	width: 100%;
+   	height: auto;
+   }
+   .Intro > p{
+   	width: 100%;
+   	height: auto;
+   }
+   .project{
+   	width: 100%;
+   	height: auto;
+   	display: flex;
+   	flex-wrap: wrap;
+   	flex-direction: column;
+   	justify-content: center;
+   	align-items: center;
+   	align-content: center;
+
+   }
+   .works{
+   	width: auto;
+   	height: auto;
+   }
+   .servic{
+   	width: 100%;
+   	height: auto;
+   	display: flex;
+   	margin: auto;
+   	flex-wrap: wrap;
+   	flex-direction: column;
+   	justify-content: center;
+   	align-items: center;
+   	align-content: center;
+
+   }
+   .provide{
+   	width: auto;
+   	height: auto;
+   }
+   .contact{
+   	width: 100%;
+   	height: auto;
+   	display: flex;
+   	flex-direction: column;
+   	flex-wrap: wrap;
+   }
+   .contact > button{
+   	width: auto;
+   	height: auto;
+   	display: flex;
+   	justify-content: center;
+   	align-items: center;
+   }
+   .last {
+   	width: 100%;
+   	height: auto;
+   }
+   .last > div{
+   	width: 100%;
+   	height: auto;
+   }
+   .last > div  h5{
+   	width: 100%;
+   	height: auto;
+   }
+  
+
+   
+  }
+
+
+  
+
+
+
+
+
+
+
+
+}
+
+	</style>
+</head>
+<body onload="showtime()">
+<div class="main">
+	<nav>
+		<div class="logo">
+			<img src="https://i.postimg.cc/59m5LWq8/IMG-20230226-082815-630.jpg">
+		</div>
+		<input type="checkbox" id="click">
+		<label for="click" class="menu-bar">
+			<i class="fas fa-bars"></i>
+		</label>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#project">Project</a></li>
+			<li><a href="#services">service</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+		<div class="moving"></div>
+	</nav>
+
+</div> 
+	
+	                            <h3></h3>
+	<!--------------------------------Navbar---------------------->
+
+	<div class="two">
+		<div class="two-image">
+			<img src="https://i.postimg.cc/FKmsj8xJ/IMG-1694182611371.jpg">
+		</div>
+		<div class="descrip">
+			<h1 style="color: yellow; padding:10px">Hello.......</h1>
+			<h2 style="padding: 10px;">I am Full Stack Engineer.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<!-------------------------------two--------------------------->
+
+	<div style="text-align: center; color: white;margin: 10px 0px ; padding: 10px;background-color: brown;"><h1>About</h1></div>
+
+	<div class="About" id="about">
+		<div class="Intro">
+			<h1 style="text-align:center;padding: 10px;color:yellow ;">Introduction</h1>
+			<p>Hello, I'm Abhishek Prajapati, a passionate and dedicated individual with a strong background in full-stack development. Hailing from the vibrant city of Ballia in Uttar Pradesh, I've embarked on a journey in the world of technology and web development that has been nothing short of exhilarating.
+
+My fascination with technology and coding began at an early age, and it led me to pursue a full-stack development course, where I honed my skills in both front-end and back-end technologies. Throughout this journey, I've acquired a deep understanding of web development frameworks, programming languages, and deployment strategies that have allowed me to create robust and user-friendly web applications.
+
+One of my key strengths lies in my ability to bridge the gap between design and functionality. I'm passionate about creating visually appealing, responsive, and interactive websites that not only meet but exceed user expectations. Whether it's crafting elegant user interfaces with HTML, CSS, and JavaScript or building scalable server-side solutions with technologies like Node.js and MongoDB, I thrive on turning ideas into digital realities.
+
+I believe in the power of continuous learning, and I'm always eager to stay updated with the latest trends and technologies in the ever-evolving field of web development. This commitment to growth ensures that my skill set remains at the cutting edge, enabling me to deliver innovative solutions to complex problems.
+</p>
+			
+		</div>
+		<div class="about-img">
+			<img src="https://i.postimg.cc/Y2J4vXTQ/1685947539531.jpg">
+		</div>
+	</div>
+
+	<!------------------------------------About--------------------->
+	<div style="text-align: center; color: white; background-color: brown;margin: 10px 0px ; padding: 10px;"><h1>Project</h1></div>
+
+
+	<div class="project" id="project">
+		<div class="works">
+			<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png">
+			<div><h4 style="text-align:center; color: black;">Project-one</h4></div>
+			<button id="button">ShowMore</button>
+
+		</div>
+
+		<div class="works">
+			<img src="https://kantata.marketing/wp-content/uploads/2021/08/project-managemenr-goals.jpg">
+			<div><h4 style="text-align:center; color: black;">Project-one</h4></div>
+			<button  id="button">ShowNow</button>
+		
+	</div>
+
+	<div class="works">
+			<img src="https://i.ytimg.com/vi/AZsUzHeETFY/maxresdefault.jpg">
+			<div><h4 style="text-align:center; color: black;">Project-one</h4></div>
+			<button  id="button">ShowNow</button>
+		</div>
+
+
+	<div class="works">
+			<img src="https://cee.iba.edu.pk/images/mastering-project-management.jpg">
+			<div><h4 style="text-align:center; color: black;">Project-one</h4></div> 
+			<button id="button">ShowNow</button>
+		</div>
+
+		<div class="works">
+			<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_Project_Cycle_Management.jpg">
+			<div><h4 style="text-align:center; color: black;">Project-one</h4></div>
+			<button   id="button">ShowNow</button>
+
+		</div>
+
+		<div class="works">
+			<img src="https://www.ntaskmanager.com/wp-content/uploads/2020/02/What-is-a-Project-1-scaled.jpg">
+			<div><h4 style="text-align:center; color: black;">Project-one</h4></div>
+			<button   id="button">ShowNow</button>
+		</div>
+	</div>
+
+	<!---------------------Project-------------------------------->
+	<div style="text-align: center; color: white; background-color:brown;margin: 10px 0px ; padding: 10px;"><h1>Service</h1></div>
+
+
+
+	<div class="servic" id="services">
+		<div class="provide">
+			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c8e34f99766893.5efa32f305079.png">
+			<div><h4 style="text-align:center; color: black;">Video-Editor</h4></div>
+			<button    id="button" >ReadMore</button>
+		</div>
+		<div class="provide">
+			<img src="https://media.licdn.com/dms/image/D4D12AQGhCg6ADbFltQ/article-cover_image-shrink_720_1280/0/1680587774886?e=2147483647&v=beta&t=o_W9UM1I7HtQcqgPWK75GzSKEc285ak3vMZA07vaj1E">
+			<div><h4 style="text-align:center; color: black;">Front-End Devlop</h4></div>
+			<button   id="button" >ReadMore</button>
+		</div>
+		<div class="provide">
+			<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_sk5cfBS--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/xndmxrfhliweofif9jty.png">
+			<div><h4 style="text-align:center; color: black;">Back-End Devlop</h4></div>
+			<button   id="button">ReadMore</button>
+		</div>
+		<div class="provide">
+			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c8e34f99766893.5efa32f305079.png">
+			<div><h4 style="text-align:center; color: black;">Web-Desing</h4></div>
+			<button   id="button" >ReadMore</button>
+		</div>
+		<div class="provide">
+			<img src="https://mobilunity.com/wp-content/uploads/2018/01/hire-ui-developer-1200-x-628.png">
+			<div><h4 style="text-align:center; color: black;">Teacheing</h4></div>
+			<button   id="button">ReadMore</button>
+		</div>
+	</div>
+
+	<!------------------------------Product------------------->
+	<div style="text-align: center; color: white;background-color: brown;margin: 10px 0px ; padding: 10px;" ><h1>Contact</h1></div>
+
+
+
+	<div class="contact" id="contact">
+		<form action="post">
+			Name:
+			<input type="text" name="name" id="name"><br>
+			Email:
+			<input type="text" name="name" id="Email"><br>
+			Contact no :
+			<input type="text" name="name" id="Contact"><br>
+			WhatsApp no :
+			<input type="text" name="name" id="pro"><br>
+			Message: 
+			<textarea  id="textarea"  cols="5" rows="5"style="width: 100%;"></textarea><br>
+			<button type="submit" onclick="Submit()">Submit</button>
+		</form>
+	</div>
+<!--------------------------------contact---------------------->
+
+<div class="last">
+	<h1 style="text-align:center; color:yellow;">Creator</h1>
+	<div>
+		<h5>|Creator@.... Abhishek Prajapati...... ap3182622@gmail.com|</h5>
+	</div>
+
+	
+</div>
+<script>
+	
+ function showtime(){
+    var d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes ();
+    var s = d.getSeconds();
+    var sec = "AM";
+
+    h = h < 10 ? "0"+h : h;
+    m = m < 10 ? "0"+m :m ;
+    s = s < 10 ? "0"+s: s;
+
+        if(h >= 12){
+            h = h -12 ;
+        };
+
+         if(h >= 12){
+            sec = "PM";
+         };
+        
+
+
+    var time = h + ":" + m + ":" + s + "" +sec;
+    document.getElementsByTagName('h3')[0].innerText= time;
+     setTimeout(showtime,1000);
+      
+
+ };
+</script>
+</body>
+	
+</html>
