@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-commers Wedsite</title>
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.navbar{
+	widows: 100%;
+	height: auto;
+	box-shadow: 5px 5px 10px grey;
+	transform: all 5s end;
+	
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	widows: 100%;
+	height: auto;
+	
+	
+}
+nav ul{
+	display: flex;
+	list-style: none;
+
+
+}
+nav ul li{
+	margin: 20px 40px;
+	padding: 10px;
+	
+}
+nav a{
+	text-decoration: none;
+	white-space: nowrap;
+
+}nav ul li >  button{
+	width: 100px;
+	font-size: 15px;
+	border-radius: 5px ;
+	background-color: orange;
+	color: white;
+	cursor: pointer;
+	box-shadow: 2px 2px 10px orange;
+	padding: 8px;
+}
+nav  button:hover{
+	background-color: blue;
+	color: white;
+	transition: all 1s ;
+}
+
+nav a:hover{
+	border: 2px black solid;
+	color: white;
+	background-color:orange ;
+	transition: all 1s;
+	padding: 5px;
+	border-radius: 5px;
+}
+nav #home{
+	border: 2px black solid;
+	color: white;
+	background-color:orange ;
+	transition: all 1s;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.menu-bar i{
+	display:none ;
+	margin: 10px 20px;
+	color: white;
+}
+#click:checked ~ ul{
+	left: 0%;
+
+}
+#click:menu bar i:before{
+	contain: /f00d;
+	display: none;
+}
+nav input{
+	display:none ;
+}
+
+.logo{
+	width: 100%;
+	height: auto;
+}
+.logo > h1{
+	margin: 10px 20px;
+	padding: 20px;
+}
+
+
+/*---------navbar--------*/
+
+.main{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+.main .para{
+	width: 70%;
+	height: 500px;
+	
+}
+.para > h1{
+	letter-spacing: 15px;
+	padding: 10px;
+	background-color: brown;
+	color: white;
+	font-family: fantasy;
+	font-family: revert-layer;
+}
+
+.para > h3{
+	margin: 20px;
+	padding: 10px;
+}
+.para > button{
+	padding: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	box-shadow: 2px 2px 10px blue;
+	background-color: purple;
+	color: white;
+	font-family: fantasy;
+
+}
+.para > button:hover{
+	background-color: brown;
+	color: white;
+	transition: 1s all;
+}
+
+.para  > h4 {
+	font-size: 30px;
+	margin: 30px 0px;
+	color :blue;
+	font-family: fantasy;
+	letter-spacing: 10px;
+}
+
+
+.main img{
+	width: 400px;
+	height: 500px;
+	
+
+}
+
+
+
+.trend{
+	text-align: center;
+}
+
+/*------------main----------------------*/
+
+.mens{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.mens .mens-items{
+	width: 250px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px grey;	
+}
+.mens-items > p{
+	text-align: center;
+	padding: 5px;
+	color: orange;
+
+}
+
+.mens-items img{
+	width: 240px;
+	height: 200px;
+	text-align: center;
+	background: radial-gradient(blue,green,yellow);
+	padding: 5px ;
+	margin: 5px 5px;
+	border-radius: 5px;
+
+}
+.mens-items > button {
+	margin:  0px 34%;
+	background-color: purple;
+	box-shadow: 2px 2px 10px blue;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 5px;
+}
+.mens-items button:hover{
+	background-color: orange;
+	color: white;
+	transition: all 1s ;
+}
+/*------------mens-----------*/
+
+.trend-two{
+	text-align: center;
+}
+
+.female{
+	width: 100%;
+	height: 300px;
+	margin: 10px 0px;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.female-items{
+	width: 250px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px grey;
+}
+.female-items > p{
+	text-align: center;
+	padding:5px ;
+	color: orange;
+}
+
+
+.female-items img{
+	width: 240px;
+	height: 200px;
+	margin: 5px 5px;
+	background: radial-gradient(blue,green,yellow);
+	padding: 5px ;
+	border-radius: 5px;
+}
+.female-items > button {
+	margin:  0px 34%;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px blue;
+	background-color: purple;
+	margin-bottom: 10px;
+	color: white;
+}
+.female-items button:hover{
+	background-color: orange;
+	cursor: pointer;
+	color: white;
+	transition: all 1s ;
+
+}
+
+
+
+/*--------------female--------------*/
+
+.about{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	margin: 10px 0px;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.about-one{
+	width: 40%;
+	height: 350px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px grey;
+}
+.about-one > p{
+	text-align: justify;
+}
+.about-one img{
+	float: left;
+}
+
+
+.about-one img{
+	width: 300px;
+	height: 350px;
+	padding: 5px;
+}
+
+
+ .about-one > button{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: orange;
+	margin-top: 5px;
+	color: white;
+	box-shadow: 2px 2px 10px blue;
+	margin-right: 40px;
+}
+
+.about-one > button:hover{
+	background-color:brown;
+	color: white;
+	transition: all 1s ;
+}
+.about-one a {
+	text-decoration: none;
+	color: white;
+}
+/*-------------about-----------------*/
+
+
+.Contact > form{
+width: 700px;
+font-size:15px;
+font-family: sans-serif;
+background: url("file:///C:/Users/ABHISHEK%20PRAJAPATI/Pictures/image3.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-weight: bold;
+height: 400px;
+box-shadow: 2px 2px 10px grey;
+margin: auto;
+display: flex;
+padding: 10px;
+flex-direction: column;
+flex-wrap: wrap;
+border-radius: 10px;
+margin-top: 10px;
+cursor: pointer;
+}
+.Contact button:hover{
+	background-color: blue;
+	color: white;
+	transition: 1s all;
+	cursor: pointer;
+}
+.Contact input{
+	color: black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+
+
+.footer{
+	width: 100%;
+	height: auto;
+	margin: 10px 0px;
+	display: flex;
+	background-color: black;
+	flex-wrap: wrap;
+	gap: 20px;
+	border-radius: 10px;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 2px 2px 10px blue;
+	
+}
+.footer > div > p{
+	margin: 10px 0px;
+	border-bottom: 2px white solid;
+	padding: 10px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------media --------------------------------------------------------*/
+
+@media (max-width:786px){
+	nav ul{
+		position: fixed;
+		top: 10%;
+		right: -100%;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		background-color: black;
+		color: white;
+		font-size: 20px;
+		font-family: sans-serif;
+
+	}
+
+	nav ul li {
+		margin:  10px 45%;
+	}
+	nav  a{
+		color: white;
+		margin: auto;
+	}
+
+	.menu-bar i{
+	display: block;
+	color: black;
+}
+#click:checked ~ ul{
+	left: 0%;
+}
+nav input{
+	display:none;
+}
+
+.logo{
+	float: right;
+}
+	.main{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.main .para{
+		width: 100%;
+		height: auto;
+		display: block;
+
+	}
+	.para > h1{
+		width: 100%;
+		height: auto;
+	}
+	.mens{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		
+	}
+	.female{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.about{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.about-one{
+		width: 100%;
+		height: auto;
+
+	}
+	.about-one > button{
+		margin: 20px 50%;
+
+	}
+	.Contact{
+		width: 100%;
+		height: auto;
+
+	}
+	.footer{
+		width: 100%;
+		height: auto;
+	}
+	.Contact > form{
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+	</style>
+</head>
+	<body onload="showtime()">
+	<div class="navbar">
+
+		<nav>
+			<div class="logo"><h1>BRANDS</h1></div>
+			<input type="checkbox" id="click">
+		   <label for="click" class="menu-bar">
+			<i class="fas fa-bars"></i>
+		</label>
+			<ul>
+				<li><a href="#Home" id="home">Home</a></li>
+				<li><a href="#aboutlinks">About</a></li>
+				<li><a href="#contac">Contact</a></li>
+				<li><a href="#MenViears">MenTrands</a></li>
+				<li><a href="#FemaleViears">FemaleTrands</a></li>
+				<li><button id="loging">Login</button></li>
+
+				
+
+			</ul>
+		</nav>
+	</div>
+
+	<!-------------navbar----------------->
+
+
+	<div class="main">
+		<div class="para">
+			<h1> Hey...Welcome To My  Website</h1>
+			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+			<button>Explore Now</button>
+			<h4 ></h4>
+		</div>
+		<img src="https://www.pngmart.com/files/15/Young-Fashion-Girl-Holding-Shopping-Bag-PNG.png">
+	</div>
+	</div>
+	
+
+	<!-----------------main-------------------->
+	<div class="trend"><h1 style="background-color: brown; color: white;">Mens Trands</h1></div>
+
+s
+	<div class="mens" id="MenViears">
+		<div class="mens-items">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkIjMvoByBwbl5q7EA3nvPcm8JMHr449CvjA&usqp=CAU">
+			<h3 style="text-align: center;">MensTshirt</h3>
+			<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+			<button>AddtoCords</button>
+		</div>
+		<div class="mens-items">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EswL5SSVY8cmexU3Z5rmkPTTcbtm9SCcMg&usqp=CAU">
+			<h3 style="text-align: center;">MensWatch</h3>
+			<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+			<button>AddtoCords</button>
+		</div>
+		<div class="mens-items">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsUGwWWPzGnWNOQe75GPVikoqRDSaJyWMhNg&usqp=CAU">
+			<h3 style="text-align: center;">MensPaint</h3>
+			<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+			<button>AddtoCords</button>
+		</div>
+	</div>
+
+	<!---------Mens viears-------------------->
+
+	<div class="trend-two"><h1 style="background-color: brown; color: white;">Female Trands</h1></div>
+
+	<div class="female" id="FemaleViears">
+		<div class="female-items">
+				<img src="https://imgmedia.lbb.in/media/2022/04/62662ee32c10463e33fc9fe7_1650863843739.jpg">
+			<h3 style="text-align: center;">LadyJutti</h3>
+			<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+			<button>AddtoCords</button>
+		</div>
+		<div class="female-items">
+				<img src="https://images.meesho.com/images/products/161845490/yhayd_512.webp">
+			<h3 style="text-align: center;">LadyWatch</h3>
+	<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+			<button>AddtoCords</button>
+		</div>
+		<div class="female-items">
+				<img src="https://4.imimg.com/data4/YA/PB/MY-2627270/ladies-wedding-saree-500x500.jpg">
+			<h3 style="text-align: center;">LadySharee</h3>
+			<p><i class="fa-solid fa-star" ></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+			<button>AddtoCords</button>
+		</div>
+	</div>
+
+
+
+
+	<!----------------female--------------->
+
+	<div class="abh" style="text-align: center;"><h1 style="background-color: brown; color: white;">About</h1></div>
+
+
+	<div class="about" id="aboutlinks">
+		<div class="about-one">
+			<img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9P2YxiAcCAwjQLXdoK0hV6oxOSjNWnJ9yZg&usqp=CAU">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, </p>
+			<button><a href="#">ReadMore</a></button>
+		</div>
+		<div class="about-one">
+			<img src="https://i.pngimg.me/thumb/f/720/5151196146827264.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident,</p>
+			<button><a href="#">ReadMore</a></button>
+
+		</div>
+
+
+	</div>
+
+	<!-----------about------------------->
+
+	<div class="Contact-head" style="text-align:center;"><h1 style="background-color: brown; color: white;">Contact</h1></div>
+
+
+	<div class="Contact" id="contac">
+		<form>
+			Name:
+			<input type="text" name="name" id="name"><br>
+			Email:
+			<input type="text" name="name" id="name"><br>
+			Contact no :
+			<input type="text" name="name" id="name"><br>
+			WhatsApp no :
+			<input type="text" name="name" id="name"><br>
+			Address : 
+			<textarea></textarea><br>
+
+			<button type="submit" style="padding:10px;width: 200; margin: 10px 45%; background-color:brown;" >Submit</button>
+
+			
+		</form>
+		
+	</div>
+
+
+	<!----------------------------Contact----------------------------->
+
+	<div class="footer">
+		<div>
+		<p>Juniurs</p>
+		<p>Propblity</p>
+		<p>About</p>
+		<p>Contact</p>
+		<p>Like</p>
+		<p>Subtitle</p>
+		<p>Service</p>
+		<p>Join</p>
+	</div>
+
+	<div>
+		<p>Stiment</p>
+		<p>Kingdom</p>
+		<p>Logic</p>
+		<p>Approch</p>
+		<p>Choose</p>
+		<p>Subscrib</p>
+		<p>Leteast</p>
+		<p>Stiment</p>
+	</div>
+
+	<div>
+		<p>Pleaser</p>
+		<p>Socity</p>
+		<p>Brands</p>
+		<p>Locals</p>
+		<p>Situatedad</p>
+		<p>Profit</p>
+		<p>Loss</p>
+		<p>Gains</p>
+	</div>
+		
+	</div>
+<script type="text/javascript">
+	function showtime(){
+	var d = new Date();
+	var h = d.getHours();
+	var m = d.getMinutes();
+	var s = d.getSeconds();
+	var sission = 'AM';
+
+	h = h < 10 ? "0" +h:h;
+	m = m < 10 ? "0" +m:m;
+	s = s < 10 ? "0" +s:s;
+
+
+	var time = h+":"+m+":"+s+":"+sission;
+
+	document.getElementsByTagName("h4")[0].innerHTML = time ; 
+
+	setTimeout(showtime , 1000);
+
+};
+
+
+var first = document.getElementById("First");
+var last = document.getElementById("Last");
+var email = document.getElementById("email");
+var contact = document.getElementById("contact");
+var no = document.getElementById("pro");
+var submit = document.getElementById("final");
+
+submit.addEventListener ("click",function(){
+	console.log(first.value);
+
+
+	
+});
+
+
+
+
+</script>
+</body>
+</html>
+
