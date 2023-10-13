@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>div testing</title>
+	<style type="text/css">
+
+		body{
+			background-color: rgba(20, 90, 60, 1.2);
+		}
+		.main{
+			width: 20%;
+			height: auto;
+			background-color: pink;
+			padding: 2px;
+			box-shadow: 2px 2px 20px yellow;
+			margin: 50px auto;
+			border-radius: 10px;
+		}
+		.main:hover{
+			transform: scale3d(1.3, 1.3, 1.3);
+
+		}
+		.main .mono{
+			width: 100px;
+			height: 100px;
+			position: 200px fixed;
+			border-radius:100px;
+			margin: 20px auto;
+		}
+		.mono > img{
+			width: 100%;
+			height: auto;
+			border-radius: 100px;
+			background:radial-gradient(blue,green,purple,yellow);
+			background-position:center;
+			padding: 5px;
+			background-size: cover;
+		}
+		.main .info{
+			width: 100%;
+			height: 190px;
+			font-family: sans-serif;
+			font-weight: bold;
+			text-align: center;
+		}
+		.main .button{
+			width: 100%;
+			height: auto;
+			margin: 10px 0px;
+
+		}
+		.button > button{
+			margin: 10px 80px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		.button > button:hover{
+			background-color: orange;
+			color: white;
+			transition: 1s all;
+
+		}
+		.button button > a{
+			text-decoration: none;
+			color: black;
+		}
+
+		@media (max-width:500px){
+			.main{
+				width: 100%;
+				height: auto;
+			}
+			.button{
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+
+			}
+			
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="mono">
+			<img src="https://i.postimg.cc/59m5LWq8/IMG-20230226-082815-630.jpg">
+		</div>
+		<div class="info">
+			<h2 style="color: blue; background-color:pink;border-radius: 10px;">Abhishek</h2>
+			<p style=" border-radius:10px;">Hello..This is Abhishek Prajapati.I am Full Stack Engineer Export Frond end Devloper and Back end devloper.and Web Designer.
+			If you want  to more about me. Please click ReadMore buttton..  </p>
+			
+		</div>
+		<div class="button">
+			<button><a href="https://creatorabhi.netlify.app">ReadMore</a></button>
+		</div>
+	</div>
+
+	
+		
+	
+
+</script>
+</body>
+</html>
