@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel website</title>
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgba(0, 0, 0, 1.0);
+}
+
+nav{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin: 10px 15px;
+}
+nav a{
+	text-decoration: none;
+	color: pink;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+nav a:hover{
+	background-color: orange;
+	color: white;
+	padding: 10px;
+	transition: 1s all;
+	border-radius: 8px;
+}
+nav > input{
+	display: none;
+}
+#click:checked ~ ul{
+	left: 0%;
+}
+.menu-bars i{
+	display: none;
+}
+.logo{
+	display: flex;
+	margin: 10px 0px;
+}
+.logo >input{
+	padding: 6px;
+	margin: 10px 0px;
+	 border-radius: 5px;
+}
+.logo h1{
+	color: white;
+	margin: 10px 0px;
+	font-weight: bold;
+	white-space: nowrap;
+	font-family: monospace;
+	font-size: 25px;
+	letter-spacing: 5px;
+}
+.logo > button{
+	width:80px ;
+	margin: 10px 5px;
+	border-radius:5px ;
+	background-color: blue;
+	height: 30px;
+
+}
+.main{
+	margin-top: 10px;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.two{
+	width: 100%;
+	height:510px ;
+	background: url("https://curlytales.com/wp-content/uploads/2022/05/Untitled-design-2022-05-09T165800.242.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	animation: scrol 9s infinite linear;
+
+
+}
+@keyframes scrol{
+	0%{
+		background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg/1200px-Mumbai_Aug_2018_%2843397784544%29.jpg") ;
+	}
+
+	25%{
+		background:url("https://curlytales.com/wp-content/uploads/2022/05/Untitled-design-2022-05-09T165800.242.jpg") ;
+		transition: all 1s;
+	} 
+
+	50%{
+		background:url("https://static.toiimg.com/photo/msid-79664955,width-96,height-65.cms") ;
+		transition: all 1s;
+
+	}
+
+	75%{
+		background:url("https://images.hindustantimes.com/img/2022/12/19/1600x900/goa_1671431491414_1671431507628_1671431507628.JPG") ;
+		transition: all 1s;
+	}
+
+	100%{
+		background:url("https://curlytales.com/wp-content/uploads/2022/05/Untitled-design-2022-05-09T165800.242.jpg") ;
+		transition: all 1s;
+	}
+}
+
+
+
+
+.goa{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow-x: auto;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+.goa::-webkit-scrollbar{
+	width: 0px;
+	display: none;
+}
+.goa-items{
+	width: 25%;
+	height: 265px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px white;
+	border: 2px white solid;
+}
+.goa-items >img{
+	width: 100%;
+	height: 150px;
+	padding: 2px;
+}
+.goa-items >h4{
+	text-align: center;
+	background-color: pink;
+	margin: 5px 0px;
+	padding: 10px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.goa-items > button{
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: orange;
+	font-family: sans-serif;
+	margin: 10px 38%;
+
+}
+.goa-items>button:hover{
+	background-color: blue;
+	color: white;
+	transition: all 1s;
+	padding: 10px;
+}
+
+.about{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+.omo{
+	width: 50%;
+	height: 380px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px blur;
+	border: 2px white solid;
+
+}
+.omo >p{
+	line-height: 22px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: justify;
+	padding: 5px;
+	word-spacing: 10px;
+	font-size: 22px;
+	color: white;
+}
+.omo > img{
+	width: 100%;
+	height: 378px;
+	padding: 2px;
+}
+.mannali{
+	width: 100%;
+	height: 520px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+}
+.mannali-items{
+	width: 25%;
+	height: 260px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px blur;
+	border: 2px white solid;
+	box-shadow: 0px 0px  10px white;
+}
+.mannali-items:hover{
+	transform: rotateY(400deg);
+	transition: all 1s;
+}
+
+.mannali-items>img{
+	width: 100%;
+	height: 150px;
+	padding: 2px;
+}
+.mannali-items >h4{
+	text-align: center;
+	font-family: sans-serif;
+	background-color: pink;
+	margin: 5px 0px;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+}
+.mannali-items > button{
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: orange;
+	font-family: sans-serif;
+	margin: 10px 38%;
+
+}
+.mannali-items>button:hover{
+	background-color: blue;
+	color: white;
+	transition: all 1s;
+	padding: 10px;
+}
+
+.tajhotel{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+.tajhotel-items{
+	width: 50%;
+	height: 380px;
+	border: 2px white solid;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px blur;
+
+}
+.tajhotel-items > p{
+	line-height: 27px;
+	font-family: sans-serif;
+	text-align: justify;
+	font-weight: bold;
+	padding: 5px;
+	word-spacing: 10px;
+	font-size: 22px;
+	color: white;
+
+}
+.tajhotel-items > img{
+	width: 100%;
+	height: 378px;
+	border: 1px black solid;
+	padding: 2px;
+}
+
+.restorant{
+	width: 100%;
+	height: 265px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow-x: auto;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+	
+}
+.restorant::-webkit-scrollbar{
+	width: 0px;
+	display: none;
+}
+.restorant-items{
+	width: 25%;
+	height: 265px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px white;
+	border: 2px white solid;
+}
+.restorant-items:hover{
+	transform: rotateY(410deg);
+	transition: 1s all;
+}
+
+
+
+.restorant-items>img{
+	width: 100%;
+	height: 150px;
+	padding: 2px;
+}
+.restorant-items >h4{
+	text-align: center;
+	background-color: pink;
+	margin: 5px 0px;
+	padding: 10px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.restorant-items > button{
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: orange;
+	font-family: sans-serif;
+	margin: 10px 38%;
+
+}
+.restorant-items>button:hover{
+	background-color: blue;
+	color: white;
+	transition: all 1s;
+	padding: 10px;
+}
+body > h1{
+	animation: mavo 2s infinite linear;
+}
+@keyframes mavo {
+	0%{
+		transform: scaleZ(0.0);
+
+		
+	}
+	50%{
+		transform: scaleX(1.3);
+		letter-spacing: 10px;
+		transition: all 2s ;
+		color: yellow;
+		
+	}
+	100%{
+		transform: scaleY(1.3);
+		transition: all 2s;
+		color: white;
+
+	}
+}
+
+.contact{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+.contact-items{
+	width: 50%;
+	height: 380px;
+	border: 2px white solid;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px blur;
+
+}
+.contact-items form{
+	color: black;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 10px;
+
+}
+.contact-items > form input{
+	width: 100%;
+	padding: 5px;
+	border-radius: 8px;
+
+}
+.contact-items > img{
+	width: 100%;
+	height: 378px;
+	border: 1px black solid;
+	padding: 2px;
+}
+#submit:hover{
+	background-color: orange;
+	color: white;
+	transition: all 1s;
+
+}
+#submit{
+	background-color: hotpink;
+	border-radius: 8px;
+
+}
+
+.last{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+.last >h1{
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+
+
+
+@media (max-width:500px){
+	*{
+		margin: 0px;
+		padding: 0px;
+
+	}
+	#click:checked ~ .menu-bars i:before{
+		content: "\f00d";
+		color: yellow;
+	}
+	nav ul{
+		width: 300px;
+		height:100vh;
+		position: fixed;
+		top: 12%;
+		left: -100%;
+		border-radius: 10px;
+		display: block;
+		align-items: center;
+		transition: all 1s;
+		justify-content: center;
+		align-content: center;
+		background-color:rgba(20, 40, 60, 1.6);
+	}
+	nav ul li{
+		margin: 30px 100px;
+	}
+	nav a{
+		text-align: center;
+	}
+	nav > input{
+	display: none;
+}
+#click:checked ~ ul{
+	left: 0%;
+}
+.menu-bars i{
+	display: block;
+	margin: 0px 20px;
+	color: white;
+	font-size: 25px;
+}
+.menu-bars i:hover{
+	cursor: pointer;
+
+}
+.logo >input{
+	display: none;
+}
+.logo > button{
+	display: none;
+}
+.logo >h1{
+	white-space: nowrap;
+}
+
+	.main{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.one{
+		display: none;
+	}
+	.three{
+		display: none;
+	}
+	.two{
+		width: 100%;
+		height:200px ;
+		background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg/1200px-Mumbai_Aug_2018_%2843397784544%29.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		animation: none;
+	}
+	.goa{
+		width: 100%;
+		height:auto ;
+		display: block;
+	}
+	.goa-items{
+		width: 100%;
+		height: auto;
+		margin: 5px 0px;
+	}
+	.goa-items:hover{
+		background: orange;
+	}
+	.goa-items > button{
+		margin: 0px 42%;
+		
+
+	}
+	.about{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.omo{
+		width: 100%;
+		height:auto ;
+	}
+	.omo > p{
+		width: 100%;
+		height: auto;
+	}
+	
+	.mannali{
+		width: 100%;
+		height: auto;
+		display: flex;
+	}
+	.mannali-items{
+		width: 47%;
+		height: ;
+	}
+	.mannali-items:hover{
+		background: blue;
+	}
+	.mannali-items > button{
+		margin: 0px 35%;
+
+	}
+	.tajhotel{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.tajhotel-items{
+		width: 100%;
+		height:auto ;
+	}
+	.tajhotel-items > p{
+		width: 100%;
+		height: auto;
+
+	}
+	.restorant{
+		width: 100%;
+		display: flex;
+	}
+	.restorant-items{
+		width: 48%;
+		height: auto;
+	}
+	.restorant-items:hover{
+		background: yellow;
+	}
+	.contact{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.contact-items{
+		width: 100%;
+		height: auto;
+	}
+	.logo >h1{
+		letter-spacing: 10px;
+
+
+	}
+
+	.last{
+		width: 100%;
+		height: ;
+	}
+	
+
+	
+
+
+}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo"><h1>HOTELS BOOKING:)</h1>
+			<input type="search" placeholder="Enter color Background" id="input">
+			<button onclick="add()">Change</button>
+		</div>
+			<input type="checkbox" id="click">
+			<label for="click" class="menu-bars">
+				<i class="fas fa-bars"></i>
+			</label>
+		<ul>
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#about">AboutUs</a></li>
+			<li><a href="#goa">Goa</a></li>
+			<li><a href="#mannali">Mannali</a></li>
+			<li><a href="#tajhotel">TajHotel</a></li>
+			<li><a href="#restorant">Restoraunt</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!---------------nav-------------------->
+
+	<div class="main">
+		
+
+		<div class="two"></div>
+
+	</div>
+
+	<h1 id="goa" style="text-align: center; padding: 10px;">GoaBooking</h1>
+
+	<div class="goa">
+		<div class="goa-items">
+			<img src="https://static.toiimg.com/photo/msid-90639944,width-96,height-65.cms">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://i0.wp.com/onedayitinerary.com/wp-content/uploads/2019/01/One-day-in-Goa-Itinerary.jpg?resize=723%2C542">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://www.adotrip.com/public/images/state/contentImg/5ebc00591619d.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e3/a0/19.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/a7/1a/90/goa-quick-guide-largejpg.jpg?w=700&h=-1&s=1">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://content.tui.co.uk/adamtui/2019_8/12_10/e6aaff8b-704a-45e1-ade1-aaa700b0036f/LOC_L00490_GOA_STH_F023WebOriginalCompressed.jpg?i10c=img.resize(width:488);img.crop(width:488%2Cheight:274)">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://santorinidave.com/wp-content/uploads/2022/09/goa-where-to-stay.jpeg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://images.hindustantimes.com/img/2022/12/19/1600x900/goa_1671431491414_1671431507628_1671431507628.JPG">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		<div class="goa-items">
+			
+			<img src="https://curlytales.com/wp-content/uploads/2022/05/Untitled-design-2022-05-09T165800.242.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+
+		
+	</div>
+
+	<!---------------goaa-------------->
+
+	<h1 id="about" style="text-align: center; padding: 10px;">AboutUs</h1>
+
+	<div class="about">
+		<div class="omo">
+			<img src="https://royalarabian.com/wp-content/uploads/2021/12/Burj-Al-Arab.jpg.webp">
+		</div>
+		<div class="omo">
+			<p>How do you describe hotel?
+Descriptions of Hotels and what is important in writing hotel ...
+A hotel is a commercial establishment that provides lodging, meals, and other services to guests, travelers, and tourists. Hotels can range from small family-run businesses to large international chains. Most hotels list a variety of services, such as room service, laundry, and concierge.How do you describe hotel?
+Descriptions of Hotels and what is important in writing hotel ...
+A hotel is a commercial establishment that provides lodging, meals, and other services to guests, travelers, and tourists. Hotels can range from small family-run businesses to large international chains. Most hotels list a variety of services, such as room service, laundry, and concierge.</p>
+		</div>
+	</div>
+
+	<!----------about----------->
+
+	<h1 id="mannali" style="text-align: center; padding: 10px;">MannaliBooking</h1>
+
+	<div class="mannali">
+		<div class="mannali-items">
+			
+			<img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Hadimba-Temple.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="mannali-items">
+			
+			<img src="https://hikerwolf.com/wp-content/uploads/2020/04/WhatsApp-Image-2020-04-02-at-7.18.33-PM.jpeg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="mannali-items">
+			
+			<img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/The-Manali-Gompa.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="mannali-items">
+			
+			<img src="https://static.toiimg.com/photo/msid-79664955,width-96,height-65.cms">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="mannali-items">
+			
+			<img src="https://i.ytimg.com/vi/FxXXHglhCTQ/maxresdefault.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		
+	</div>
+
+	<!--------------mannali------------------>
+
+	<h1 id="tajhotel" style="text-align: center; padding: 10px;">TajHotel</h1>
+
+	<div class="tajhotel">
+		<div class="tajhotel-items">
+			
+			<p>What is the real story of Taj Hotel?
+Taj Hotels - Wikipedia
+There are several anecdotal stories about why Tata opened the Taj hotel. According to a story, he decided to open the hotel after an incident involving racial discrimination at the Watson's Hotel in Mumbai, where he was refused entry as the hotel permitted only Europeans.Signature experiences such as the afternoon tea at Sea Lounge and private dining at the Chef's Studio make your stay with us truly memorable. J Wellness Circle offers a soothing blend of contemporary aromatherapy massages and rejuvenating therapies.</p>
+		</div>
+		<div class="tajhotel-items">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg/1200px-Mumbai_Aug_2018_%2843397784544%29.jpg">
+		</div>
+	</div>
+
+	<!------------------tajhotal------------>
+
+	<h1 id="restorant" style="text-align: center; padding: 10px;">RastorantBooking</h1>
+
+	<div class="restorant">
+		<div class="restorant-items">
+			
+			
+			<img src="https://thumbs.dreamstime.com/b/interior-traditional-indian-restaurant-design-interior-traditional-indian-restaurant-simple-design-282134635.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://www.thehealthyapproach.co.uk/wp-content/uploads/2018/09/dhabba-friends.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://media.istockphoto.com/id/922783734/photo/assorted-indian-recipes-food-various.jpg?s=612x612&w=0&k=20&c=p8DepvymWfC5j7c6En2UsQ6sUM794SQMwceeBW3yQ9M=">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://www.telegraph.co.uk/content/dam/travel/Spark/visit-dubai/Dubai-Little-Miss-India-Restaurant.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://images.otstatic.com/prod1/42271722/3/huge.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201605/story-chakraa-sc-buzz_050616111452_647_051016032802.jpg?VersionId=kqFD_Y06EPX70f2IJuYRSHNyFWo6dGPG">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2021/06/04130258/5r4t-24.jpg">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://etimg.etb2bimg.com/photo/75161189.cms">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://www.architectandinteriorsindia.com/cloud/2021/11/15/Story-3-1.gif">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://static.toiimg.com/photo/57867312.cms">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://lh5.googleusercontent.com/p/AF1QipMOL9D7atQ_hFcbfdZzYfg0SV4DHNLScjDRPT6o=w1440-h811-k-no">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		<div class="restorant-items">
+			
+			
+			<img src="https://lh3.googleusercontent.com/p/AF1QipOQBN8iQjVZHBF-xgOtSH5VOiWLKtr7G38pa9Ng=s1600-w400">
+			<h4>Press the button</h4>
+			<button>Booking</button>
+		</div>
+		
+
+		
+	</div>
+
+	<!---------------rastorent--------------->
+
+	<h1 id="contact" style="text-align: center; padding: 10px;">CountactUs</h1>
+
+	<div class="contact">
+		<div class="contact-items">
+			<img src="https://img.freepik.com/premium-photo/phone-call-laptop-business-indian-woman-office-planning-discussion-communication-corporate-worker-email-female-person-talking-computer-contact-network-conversation_590464-216010.jpg">
+		</div>
+		<div class="contact-items">
+			<form onsubmit=" return submitform()" method="get">
+				Name:
+				<input type="name" name="name" placeholder="Enter your name" id="name"><br><br>
+
+				LastName:
+				<input type="lastname" name="name" placeholder="Enter your lastname" id="lname"><br><br>
+
+				Email:
+				<input type="Email" placeholder="Enter your email" id="email"><br><br>
+
+				Password:
+				<input type="Password" placeholder="Enter your Password" id="pass"><br><br>
+
+				MobileNo:
+				<input type="number"  placeholder="Enter your MobileNo" id="mob"><br><br>
+
+				<input type="submit" id="submit">
+
+
+			</form>
+		</div>
+	</div>
+
+<div class="last">
+	<h1 style="color: yellow;">Creator@<span style="color: blue;"> Abhishek</span><span style="color: yellow;"> Prajapati</span>:)!</h1> 
+</div>
+
+
+
+
+
+<script>
+	function submitform(){
+	var name = document.getElementById("name").value;
+	var lname = document.getElementById("lname").value;
+	var email = document.getElementById("email").value;
+	var pass = document.getElementById("pass").value;
+	var mob = document.getElementById("mob").value;
+
+	if(name == "" || lname == "" || email == "" || pass == "" ||pass == "" || mob == ""){
+		alert("Please file the all fields");
+		return false;
+	}else{
+		document.write(`Your name is: ${name} <br>`);
+		document.write(`Your lastname is: ${lname} <br>`);
+		document.write(`Your email is: ${email} <br>`);
+		document.write(`Your password is: ${pass} <br>`);
+		document.write(`Your mobile is: ${mob} <br>`);
+
+		return true;
+		
+	}
+};
+function add(){
+var input = document.querySelector("#input").value;
+
+document.body.style.backgroundColor = input;
+
+};
+
+</script>
+</body>
+</html>
