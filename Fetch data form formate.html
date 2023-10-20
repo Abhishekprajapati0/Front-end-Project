@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fetch data table formet</title>
+  <style type="text/css">
+  </style>
+</head>
+<body>
+  <button onclick="show()">showData</button>
+  <div class="table" id="tabledata">
+  <table border="2px " cellpadding="20px">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Username</th>
+        <th>Website</th>
+        <th>Company</th>
+         <th>Email</th>
+          <th>Addres</th>
+      </tr>
+    </thead>
+    <tbody id="user">
+      
+    </tbody>
+  </table>
+</div>
+<script type="text/javascript">
+  async function API(){
+    try{
+    const data = await fetch("https://jsonplaceholder.typicode.com/users");
+    const getdata = await data.json();
+    console.log(getdata);
+   var user = document.getElementById("user").innerHTML=  getdata.map((value)=>
+    `<tr>
+    <td>${value.id}</td>
+    <td>${value.name}</td>
+    <td>${value.phone}</td>
+    <td>${value.username}</td>
+    <td>${value.website}</td>
+    <td>${value.company.name}</td>
+     <td>${value.email}</td>
+    <td>${value.address.city}</td>
+    
+    </tr>`
+      ).join("");
+ }catch{
+  console.log("wrong");
+ };
+  };
+
+  function show(){
+    API();
+  }
+</script>
+</body>
+</html>
