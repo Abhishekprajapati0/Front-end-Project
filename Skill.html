@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<title>Skill devlopment  web page</title>
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color:rgba(100, 0, 350, 1.5);
+}
+.main{
+	width: ;
+	height: ;
+	position: sticky;
+	top: 0px;
+	overflow: hidden;
+}
+nav{
+	width: 100%;
+	padding: 10px;
+	background-color: ghostwhite;
+	height: auto;
+	display: flex;
+	overflow: hidden;
+	justify-content: space-around;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+}
+nav ul li{
+	margin: 10px 30px;
+}
+nav a{
+	font-weight: bold;
+	position: sticky;
+	font-family: sans-serif;
+	top: 0px;
+	text-decoration: none;
+	color: blue;
+	border-bottom: 3px solid orange;
+	font-size: 18px;
+
+
+}
+nav input{
+	display: none;
+}
+#click:checked ~ ul{
+	right: 0%;
+}
+.menu-bars > i{
+	color: white;
+	margin: 10px 20px;
+	display: none;
+}
+nav a:hover{
+	background-color: orange;
+	color: white;
+	text-shadow: 2px 2px  20px orange ;
+	border-radius: 10px;
+	padding: 10px;
+	transition: 1s all;
+
+}
+nav ul >button{
+	padding: 5px;
+	margin: 0px 20px;
+	border-radius: 10px;
+
+	color: white;
+	font-family: sans-serif;
+	height: 40px;
+	margin: 5px 10px;
+	background: green;
+	border: none;
+	font-weight: bold;
+}
+nav ul >button:hover{
+	background-color: orange;
+	color: white;
+	transition: 1s all;
+}
+
+.must{
+	width: 100%;
+	height: 400px;
+	background: url("https://www.ukm.my/siswazahfst/wp-content/uploads/2023/03/Data-Science-and-Analytics.jpg");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	display: flex;
+	border: 2px white solid;
+}
+.Item{
+	width: 50%;
+	height: 200px;
+	border-radius: 10px;
+	padding: 10px;
+}
+.Item >img{
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.Courses{
+	width: 100%;
+	height: 400px;
+	border: 2ps red solid;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-between;
+
+}
+.Course-items{
+	width: 24%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 20px black;
+	text-align: center;
+
+}
+.Course-items:hover{
+	transition: all 2s;
+	transform: rotateY(400deg);
+}
+.Course-items:hover{
+	transform: rotateY(400deg);
+	
+}
+
+.Course-items >img{
+	width:100px ;
+	height:100px ;
+	border-radius: 100px;
+	border: 1px blue solid;
+}
+.Course-items >button{
+	padding: 10px;
+	margin: 2px 0px;
+	cursor: pointer;
+	border-radius: 8px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	background-color: brown;
+}
+.Course-items >button:hover{
+	background-color: orange;
+	color: white;
+	transition: 1s all;
+}
+.Course-items>h3{
+	background-color: orange;
+	padding: 2px;
+}
+
+.Course-items >p{
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+.About{
+	width: 100%;
+	height: 400px;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	
+}
+.about-items{
+	width: 50%;
+	height: 400px;
+	box-shadow: 2px 2px 20px blue;
+	
+}
+
+
+.Map{
+	width: 100%;
+	height: 400px;
+	box-shadow: 2px 2px 20px blue;
+}
+.Map >iframe{
+	width:100%;
+	padding: 5px 5px;
+	height: 400px;
+}
+
+.Contact{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	
+}
+.contact-items{
+	width: 50%;
+	height: 400px;
+	box-shadow: 2px 2px 20px blue;
+}
+.contact-items >img{
+	width: 100%;
+	height: 400px;
+	border-radius: 10px;
+	padding: 5px 5px;
+}
+
+.about-items >img{
+	width: 100%;
+	height: 400px;
+	border-radius: 10px;
+	padding: 5px 5px;
+}
+.about-items >p{
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	padding: 5px 5px;
+	word-spacing: 10px;
+	text-align: justify;
+}
+.contact-items >form{
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 10px;
+}
+.contact-items >form >input{
+	width: 100%;
+	border-radius: 10px;
+	margin: 8px 0px;
+	padding: 10px;
+}
+.leloji{
+	background-color: black;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: white;
+}
+.leloji:hover{
+	background-color: orange;
+	color: white;
+	transition: all 1s;
+}
+.last{
+	margin: 10px 0px;
+	width: 100%;
+	height: 250px;
+	text-align: center;
+}
+
+.last > img{
+	width: 200px;
+	margin: 5px 0px;
+	height: 200px;
+	border: 1px white solid;
+	border-radius: 200px;
+}
+
+
+@media(max-width:780px){
+	#click:checked ~ .menu-bars >i:before{
+		content:"\f00d";
+
+}
+	nav ul{
+		width: 100%;
+		height: 100vh;
+		background: green;
+		position: fixed;
+		display: block;
+		transition: 1s all;
+		top: 10%;
+		right: -100%;
+		align-items: center;
+		text-align: center;
+	}
+	nav ul li{
+		margin: 40px 0px;
+	}
+	nav input{
+	display: none;
+}
+nav a{
+	color: white;
+}
+#click:checked ~ ul{
+	right: 0%;
+}
+.menu-bars > i{
+	color: blue;
+	margin: 14px 20px;
+	display: block;
+}
+	.must{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.Item{
+		width: 100%;
+		height:300px ;
+	}
+	.Courses{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.Course-items{
+		width: 100%;
+		height:auto ;
+	}
+	.About{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.about-items{
+		width: 100%;
+		height:auto ;
+	}
+	.about-items > p{
+		width: 100%;
+		font-size: 20px;
+		height: auto;
+	}
+	.Contact{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.contact-items{
+		width: 100%;
+		height: ;
+	}
+}
+
+
+
+	</style>
+</head>
+<body >
+	<div class="main">
+		<nav>
+			<div class="logo">
+		<h1 style="color: green; padding: 5px; font-size: 30px; letter-spacing:10px;">LearnsSkills</h1></div>
+		<input type="checkbox" id="click">
+		<label for="click" class="menu-bars">
+		<i class="fas fa-bars"></i>
+		</label>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#course" id="one">Course</a></li>
+				<li><a href="#about" id="two">About</a></li>
+				<li><a href="#map" id="three">Map</a></li>
+				<li><a href="#contact" id="four">ContactUs</a></li>
+				<button>Long/Sing</button>
+			</ul>
+		</nav>
+	</div>
+	<h2 id="time"></h2>
+
+	<!--------------------navbars----------------->
+
+	<div class="must">
+		<div class="Item">
+			<img src="https://ecellgroup.com/wp-content/uploads/2016/06/LS4.png">
+		</div>
+		
+		</div>
+
+	</div>
+
+	<!------------just-------------------->
+
+	<h1 id = "course"style=" color: white;  background-color:blue ;  letter-spacing: 10px;  margin: 10px 0px;
+	  padding:10px;font-size:30px; font-family: sans-serif; text-align:center;">Courses</h1>
+
+	  <!-------------------------heading------------>
+
+	  <div class="Courses">
+	  	<div class="Course-items">
+	  		<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201111215809/How-to-Become-a-Front-End-Developer-in-2020.png">
+	  		<h3 style="color: white;">Front End devloper</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button>
+	  	</div>
+	  	<div class="Course-items">
+	  		<img src="https://t3.ftcdn.net/jpg/03/48/51/04/360_F_348510440_4sU9iEb76OnOO8NIptmrq5VyYskplXKg.jpg">
+	  		<h3 style="color:white">Back End Devloper</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button>
+	  	</div>
+	  	<div class="Course-items">
+	  		<img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/08/web-developer-skills.jpg">
+	  		<h3 style="color:white">Web Devloper</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button></div>
+	  	<div class="Course-items">
+	  		<img src="https://codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg">
+	  		<h3 style="color:white">Full Stack Devloper</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button></div>
+	  	<div class="Course-items">
+	  		<img src="https://usa.bootcampcdn.com/wp-content/uploads/sites/119/2020/11/DM_blog_post_image_03.jpg">
+	  		<h3 style="color:white">Digital Marketing</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button></div>
+	  	<div class="Course-items">
+	  		<img src="https://thumbs.dreamstime.com/b/big-data-center-analyzes-data-science-background-presentation-big-data-center-analyzes-data-science-background-159196598.jpg">
+	  		<h3 style="color:white">Data Science</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button>
+	  	</div>
+	  	<div class="Course-items">
+	  		<img src="https://as2.ftcdn.net/v2/jpg/02/19/49/77/1000_F_219497752_ju0HB2IaoAzVNpscAsfDOZZiWUMOmwhM.jpg">
+	  		<h3 style="color:white">Bussiness Devlopment</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button></div>
+	  	<div class="Course-items">
+	  		<img src="https://www.shutterstock.com/image-illustration/ai-learning-artificial-intelligence-concept-260nw-1927438883.jpg">
+	  		<h3 style="color:white">Artificial Intelligents</h3>
+	  		<p>If you want to by the course you can click the Buynow button</p>
+	  		<button>BuyNow</button>
+	  	</div>
+
+	  </div>
+
+	  <!----------------------------------COURSE----->
+
+	  <h1 id="about"style=" color: white;  background-color:blue ;  letter-spacing: 10px;  margin: 40px 0px;
+	  padding:10px;font-size:30px; font-family: sans-serif; text-align:center;">AboutUs</h1>
+	
+
+	  <div class="About">
+	  	<div class="about-items"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	  	</div>
+	  	<div class="about-items">
+	  		<img src="https://img.freepik.com/free-vector/flat-thinking-concept-dark-background_52683-9294.jpg?size=338&ext=jpg&ga=GA1.1.1413502914.1696377600&semt=ais">
+	  	</div>
+	  </div>
+
+	  <!------------------------about---------->
+
+	  <h1 id="map" style=" color: white;  background-color:blue ;  letter-spacing: 10px;  margin: 10px 0px;
+	  padding:10px;font-size:30px; font-family: sans-serif; text-align:center;">Map</h1>
+
+
+
+	   <div class="Map">
+	   	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3776869.4827869623!2d71.3269721!3d22.41588245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1698418936977!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	   </div>
+
+	   <!------------------------------ map------>
+
+	   <h1 id="contact" style=" color: white;  background-color:blue ;  letter-spacing: 10px;  margin: 10px 0px;
+	  padding:10px;font-size:30px; font-family: sans-serif; text-align:center;">ContactUs</h1>
+
+	   <div class="Contact">
+	   	<div class="contact-items">
+	   		<img src="https://static.wixstatic.com/media/94a179_17395f28c0a543c7a6bfe63474bf51ee~mv2.jpg/v1/fill/w_622,h_302,al_c,lg_1,q_80,enc_auto/unnamed.jpg">
+	   	</div>
+	  	<div class="contact-items">
+	  		<form onsubmit="return showdata()">
+	  			Name:
+	  			<input type="text"  id="name" placeholder="Enter your name"><br>
+	  			Email:
+	  			<input type="Email"  id="email" placeholder="Enter your email"><br>
+	  			Phone:
+	  			<input type="numbers" id="numb" placeholder="Enter your mob"><br>
+
+	  			Whatsaap NO:
+	  			<input type="numbers"  id="watnu" placeholder="Enter Whatsaap numbers">
+
+
+
+	  			Select Course:
+	  			<select>
+	  				<option>Select</option>
+	  				<option>Front end Devlopment</option>
+	  				<option>Back end Devlopment</option>
+	  				<option>Full Stack Devlopment</option>
+	  				<option>Digital Marketing</option>
+	  				<option>Businnes Devlopment</option>
+	  				<option>Data Science</option>
+	  			</select><br>
+
+	  			<input type="submit" class="leloji">
+
+	  		</form>
+	  	</div>
+	   	
+	   </div>
+
+	   <!----------------------comtact---------->
+
+	   <div class="last">
+	   	
+	   		<img src="https://i.postimg.cc/Y2J4vXTQ/1685947539531.jpg">
+	   		<h1 style="color:orange;">Creator @Abhishek Prajapati</h1>
+	   		
+	   
+	   </div>
+	  	
+
+
+<script>
+	function showdata(){
+	var name = document.getElementById('name').value;
+	var email = document.getElementById("email").value;
+	var phone = document.getElementById("numb").value;
+	var what = document.getElementById("watnu").value;
+
+	if(name=="" || email=="" || phone=="" || what==""){
+		alert("Please fill all Information");
+		return false;
+	}else{
+		alert("Done");
+		 return true;
+	}
+}
+
+
+
+</script>
+</body>
+</html>
