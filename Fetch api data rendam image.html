@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>data</title>
+    <style type="text/css">
+        #main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+           
+        }
+
+        .cords {
+            width: 20%;
+            height: 400px;
+            margin: 20px 0px;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+            border: 2px black solid;
+        }
+
+        .cords > img {
+            width: 100%;
+            height: 180px;
+            border-radius:10px ;
+        }
+
+        .cords > h1 {
+            text-align: center;
+        }
+
+        .cords > p {
+            text-align: center;
+        }
+
+        .cords > button {
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0px;
+        }
+        .cords >button:hover{
+            background-color: orange;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            transition: 1s all;
+
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showdata()">ShowApiDATA</button>
+    <div id="main"></div>
+
+    <script type="text/javascript">
+        async function apidata() {
+            const data = await fetch("https://picsum.photos/v2/list");
+            const res = await data.json();
+            console.log(res);
+
+            var main = document.getElementById("main");
+            main.innerHTML = res.map((value) => {
+                return `
+                <div class="cords">
+                    <img src="${value.download_url}">
+                    <h1>${value.id}</h1>
+                    <p>${value.author}</p>
+                    <button>ViewMore</button>
+                </div>
+                `;
+            }).join(''); // Use join to convert the array into a single string
+
+        };
+        function showdata(){
+            apidata();
+        }
+    </script>
+</body>
+</html>
