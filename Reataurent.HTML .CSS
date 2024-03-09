@@ -1,0 +1,551 @@
+
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+
+
+    .main {
+      width: 100%;
+      height: auto;
+      display: flex;
+      gap: 5px;
+      background: pink;
+      justify-content: space-between;
+    }
+
+    .allmenu {
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      height: 500px;
+      overflow-y: auto;
+
+    }
+    .nav:hover{
+      background:orange;
+    }
+
+    .nav {
+      width: 110px;
+      height: 70px;
+      background: white;
+      white-space: nowrap;
+
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .nav h6,
+    p {
+      padding: 5px;
+
+    }
+
+    .resepi {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 5px;
+      gap: 5px;
+      height: 470px;
+
+    }
+
+    .showrecepi {
+      width: 120px;
+      height: 60px;
+      padding: 5px;
+      background: white;
+      border-radius: 10px;
+
+    }
+
+    .showrecepi p {
+      color: red;
+    }
+    .showrecepi:hover{
+      background:gold;
+    }
+
+    .deppent {
+      width: 500px;
+      height: auto;
+
+    }
+
+    .para {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      padding: 5px;
+      justify-content: space-between;
+
+    }
+
+    .headd {
+      width: 100%;
+      height: 30px;
+
+      text-align: center;
+      background-color: gold;
+    }
+
+    .dipemenu {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navall {
+      width: 100px;
+      height: 60px;
+      display: flex;
+      padding: 5px;
+      gap: 10px;
+      flex-wrap: wrap;
+      white-space: nowrap;
+      justify-content: center;
+      background: grey;
+
+    }
+
+    .navall h6 {
+      color: white;
+      text-align: center;
+    }
+
+    .navall,
+    span {
+      color: white;
+    }
+
+    .logic {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      gap: 5px;
+      padding: 10px;
+      justify-content: space-between;
+
+    }
+
+    .addlogic span {
+      margin: 0px 3px;
+
+    }
+
+    .blank {
+      width: 100%;
+      height: 150px;
+
+    }
+
+    .list {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .alllist {
+      width: 120px;
+      height:auto;
+
+    }
+    
+
+    .alllist,
+    p {
+      color: black;
+    }
+
+   .last{
+     width:100%;
+     height:120px;
+   
+     display:flex;
+     gap:10px;
+     
+   }
+    .lastitem{
+      width:130px;
+      height:55px;
+      padding:2px;
+      background:gold;
+      border-radius:10px;
+      
+    }
+
+    @media (max-width:768px) {
+      .main {
+        display: block;
+        height: auto;
+      }
+
+      .allmenu {
+        width: 100%;
+        height: auto;
+      }
+
+      .resepi {
+        width: 100%;
+        height: auto;
+      }
+
+      .deppent {
+        width: 100%;
+        height: auto;
+      }
+      .para{
+        width:100%;
+        display:block;
+        height:auto;
+      }
+      .headd{
+        width:100%;
+        height:auto;
+      }
+     .dipemenu{
+       width:100%;
+       height:auto;
+       display:flex;
+       flex-wrap:wrap;
+       gap:10px;
+       
+     }
+     .logic{
+       
+       width:100%;
+       height:auto;
+       display:flex;
+       flex-wrap:wrap;
+       gap:10px;
+       
+     
+     }
+     .last{
+      
+       width:100%;
+       height:auto;
+       display:flex;
+       flex-wrap:wrap;
+       gap:10px;
+       justify-content:space-around;
+       
+     
+     }
+     .
+    }
+
+    ;
+
+  </style>
+
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hello,Lava Pab Rastaurent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+          </ul>
+          <div>
+            <button class="btn btn-primary">
+              New Order
+            </button>
+            <button class="btn btn-danger">
+              KOT
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!----------------------------------nav---------------------------->
+
+    <div class="main">
+      <div class="allmenu">
+        <div class="nav">
+          <h6>All Menu</h6>
+          <p> 19 item</p>
+        </div>
+        <div class="nav">
+          <h6>Menu Burger</h6>
+          <p> 1 item</p>
+        </div>
+        <div class="nav">
+          <h6>Chicken fies</h6>
+          <p> 1 item</p>
+        </div>
+        <div class="nav">
+          <h6>Swiss Roll</h6>
+          <p> 2 item</p>
+        </div>
+        <div class="nav">
+          <h6>WadaPav</h6>
+          <p> 1 item</p>
+        </div>
+        <div class="nav">
+          <h6>Veg Momos</h6>
+          <p> 19item</p>
+        </div>
+        <div class="nav">
+          <h6>French Fies</h6>
+          <p> 19 item</p>
+        </div>
+      </div>
+      <!--------------ALLNEMU-------------->
+
+
+      <div class="resepi">
+        <div class="showrecepi">
+          <h6>
+            Cheese Pizza
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            140
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Corn Pizza
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            99
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Shahi Paneer
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            100
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Tanduri,Chicken
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            459
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Straberry,Swiss
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            50
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Boa Wow Pav
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            548
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Burger
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            1
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Paneer Roll
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            60
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Lenom Drink
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            100
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Chicken Roll
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            70
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Paneer Roll
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            60
+          </p>
+        </div>
+        <div class="showrecepi">
+          <h6>
+            Veg Roll
+          </h6>
+          <p><i class="fa-solid fa-indian-rupee-sign"></i>
+            40
+          </p>
+        </div>
+      </div>
+      <!---------------recepi ------------->
+      <div class="deppent">
+        <div class="para">
+          <div>
+            <h6>DINI IN</h6>
+            <p>28th Nov 2023</p>
+          </div>
+          <div>
+            <p style=color:red;>2</p><span style=color:red;>Ground Floar</span>
+          </div>
+        </div>
+        <div class="headd">
+          <h5>
+            DINE(POS)
+          </h5>
+        </div>
+
+        <div class="dipemenu">
+          <div class="navall">
+           <span><i class="fa-duotone fa-utensils"></i></span><span>Items</span>
+          </div>
+          <div class="navall">
+           <span><i class="fa-solid fa-user"></i></span><span>Costomer</span>
+             </div>
+          <div class="navall">
+            <span><i class="fa-solid fa-users"></i></span><span>Tol Person</span>
+          </div>
+          <div class="navall">
+           <span><i class="fa-solid fa-user"></i></span><span>Suggetion</span>
+          </div>
+          <div class="navall">
+           <span><i class="fa-solid fa-user-secret"></i></span><span>Waiter</span>
+          </div>
+          <div class="navall">
+           <span><i class="fa-solid fa-percent"></i></span><span>Discount</span>
+          </div>
+          <div class="navall">
+            <span><i class="fa-solid fa-check"></i></span><span>MarkPad</span>
+          </div>
+        </div>
+        <p>
+          Click on Save KOT/ PRINT KOT to Generetor KOT
+        </p>
+
+        <div class="logic">
+          <div class="addlogic">
+            <h6>
+              Bao Wow Pav
+            </h6>
+          </div>
+          <div class="addlogic">
+            <span class="btn btn-info">-</span><span class="btn btn-info">1</span><span class="btn btn-info">+</span>
+          </div>
+          <div class="addlogic">
+            <p><i class="fa-solid fa-indian-rupee-sign"></i>
+              588
+            </p>
+          </div>
+          <div class="addlogic">
+            <h6 class="btn btn-danger">
+              x
+            </h6>
+          </div>
+        </div>
+        <div class="blank">
+
+        </div>
+        <div class="list">
+          <div class="alllist">
+            <p>item(1)</p>
+            <p>Discount(13%)</p>
+            <p>SCH(5%)</p>
+            <p>CGST(2.5%)</p>
+            <p>SGST(2.5%)</p>
+            <H6>
+              Total
+            </H6>
+
+          </div>
+          <div class="alllist">
+            <p><i class="fa-solid fa-indian-rupee-sign"></i>588.00
+            </p>
+            <p><i class="fa-solid fa-indian-rupee-sign"></i>76.44
+            </p>
+            <p><i class="fa-solid fa-indian-rupee-sign"></i>25.58
+            </p>
+            <p><i class="fa-solid fa-indian-rupee-sign"></i>13.43
+            </p>
+            <p><i class="fa-solid fa-indian-rupee-sign"></i>13.43
+            </p>
+            <h6><i class="fa-solid fa-indian-rupee-sign"></i>563.99
+            </h6>
+          </div>
+        </div>
+
+        <div class="last">
+          <div class="lastitem">
+            <h5>
+              SAVE KOT
+            </h5>
+          </div>
+          <div class="lastitem">
+            <h5>
+              PRINT KOT
+            </h5>
+          </div>
+          <div class="lastitem">
+            <h5 class = "hl">
+              SAVE BILL
+            </h5>
+          </div>
+          <div class="lastitem">
+            <h5 class = "hl">
+              PRINT BILL
+            </h5>
+          </div>
+        </div>
+
+      </div>
+
+      <!------------------------------>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+</html>
